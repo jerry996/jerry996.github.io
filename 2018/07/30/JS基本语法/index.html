@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>git命令 | Hexo</title>
+  <title>JS基本语法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="svn与git区别： 1.Git分布式：123每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网； 2.中央版本库：SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问">
-<meta name="keywords" content="工具">
+  <meta name="description" content="1.浏览器组成 1.shell壳子：浏览器外观 2.内核部分：相当于内部发动机a.渲染引擎（解析html和css到浏览器上，呈现出一个静态网页）b.js 引擎（解释、执行js代码，转换成计算机语言）c.其他模块：异步以及其他关系  2.javascript特点:javascript是一种动态类型的、面向对象的脚本语言，它运行在宿主(host)环境中，它的宿主环境通常是一个Web浏览器。JavaSc">
+<meta name="keywords" content="ECMAScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git命令">
-<meta property="og:url" content="http://yoursite.com/2018/07/30/git命令/index.html">
+<meta property="og:title" content="JS基本语法">
+<meta property="og:url" content="http://yoursite.com/2018/07/30/JS基本语法/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="svn与git区别： 1.Git分布式：123每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网； 2.中央版本库：SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问">
+<meta property="og:description" content="1.浏览器组成 1.shell壳子：浏览器外观 2.内核部分：相当于内部发动机a.渲染引擎（解析html和css到浏览器上，呈现出一个静态网页）b.js 引擎（解释、执行js代码，转换成计算机语言）c.其他模块：异步以及其他关系  2.javascript特点:javascript是一种动态类型的、面向对象的脚本语言，它运行在宿主(host)环境中，它的宿主环境通常是一个Web浏览器。JavaSc">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-30T13:10:18.569Z">
+<meta property="og:updated_time" content="2018-07-30T13:56:11.591Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git命令">
-<meta name="twitter:description" content="svn与git区别： 1.Git分布式：123每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网； 2.中央版本库：SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问">
+<meta name="twitter:title" content="JS基本语法">
+<meta name="twitter:description" content="1.浏览器组成 1.shell壳子：浏览器外观 2.内核部分：相当于内部发动机a.渲染引擎（解析html和css到浏览器上，呈现出一个静态网页）b.js 引擎（解释、执行js代码，转换成计算机语言）c.其他模块：异步以及其他关系  2.javascript特点:javascript是一种动态类型的、面向对象的脚本语言，它运行在宿主(host)环境中，它的宿主环境通常是一个Web浏览器。JavaSc">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -141,42 +141,52 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-git命令" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JS基本语法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      git命令
+      JS基本语法
     </h1>
   
 
         
-        <a href="/2018/07/30/git命令/" class="archive-article-date">
-  	<time datetime="2018-07-30T12:53:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+        <a href="/2018/07/30/JS基本语法/" class="archive-article-date">
+  	<time datetime="2018-07-30T13:53:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="svn与git区别："><a href="#svn与git区别：" class="headerlink" title="svn与git区别："></a>svn与git区别：</h3><ul>
-<li>1.Git分布式：123<br>每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网；</li>
-<li>2.中央版本库：<br>SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问题时，所有工作成员都一起瘫痪。SVN在Commit前，我们都建议是先Update一下，跟本地的代码编译没问题，并确保开发的功能正常后再提交。当你提交你的完成品时，它将直接记录到中央版本库。当你发现你的完成品存在严重问题时，你已经无法阻止事情的发生了。如果网路中断，你根本没办法提交！<br>每一个Git都是一个版本库。主要版本库发生了什麼事，工作成员仍然可以在自己的本地版本库提交，等待主要版本库恢复即可。工作成员也可以提交到其他的版本库。而git的提交完全属於本地版本库的活动。而你只需“推”（git push）到主要版本库即可。Git的“推”其实是在执行“同步”（Sync）。</li>
-<li>3.分支：<br>在SVN，开分支会影响其他工作成员。切换分支会把代码下载下来，特别慢。<br>而Git，只要我不合并及提交到主要版本库，没有一个工作成员会被影响。根据指针切换分支。</li>
+        <h3 id="1-浏览器组成"><a href="#1-浏览器组成" class="headerlink" title="1.浏览器组成"></a>1.浏览器组成</h3><ul>
+<li>1.shell壳子：浏览器外观</li>
+<li>2.内核部分：相当于内部发动机<br>a.渲染引擎（解析html和css到浏览器上，呈现出一个静态网页）<br>b.js 引擎（解释、执行js代码，转换成计算机语言）<br>c.其他模块：异步以及其他关系</li>
 </ul>
-<h3 id="SVN使用方法"><a href="#SVN使用方法" class="headerlink" title="SVN使用方法"></a>SVN使用方法</h3><p>1.迁出配置库内容：右键 →SVN Checkout<br>2.提交更新：SVN Commit，使用之前，要先Update一下，来确保是最新的。<br>3.撤销更改：Tortoise SVN -&gt; Revert<br>4.获取历史文件: Tortoise SVN -&gt; Show log显示日志<br>5.补丁：Tortoise SVN-&gt; Create patch</p>
-<h3 id="git基本操作"><a href="#git基本操作" class="headerlink" title="git基本操作"></a>git基本操作</h3><p>git –version  查看版本号<br>配置变量(git需要知道项目是谁写的)<br>git config –global user.name + yourname<br>git config –global user.email  + youremail<br>git init 初始化，.git管理文件夹<br>git add index.html   把本地文件添加到缓存区<br>git add .  把所有修改的文件都提交到缓存区<br>git commit -m “修复了一些bug”  推到仓库，说明版本都做什么了</p>
-<p>git status 返回状态信息，查看git仓库当前的状态(会显示哪些文件推入缓存区，哪些还没推到仓库)<br>git diff 查看文件具体修改了哪里</p>
-<p>git reset –hard HEAD^ 回退到上一次commit的时候(HEAD^回退一个版本，HEAD^^回退两个版本，HEAD~100回退100个版本)<br>git reset –hard 123456 版本前进 只能根据id进行前进(写出前六位即可)<br>git log 看日志，查看最近到最远提交到仓库的文件信息（一串数字为特有的时间序列id，可以根据他进行版本前后回滚）<br>git reflog 查看每次操作仓库的信息(commit)</p>
-<h3 id="分支基本操作"><a href="#分支基本操作" class="headerlink" title="分支基本操作"></a>分支基本操作</h3><p>git branch dev  创建dev分支<br>git branch   看所有的分支，当前分支为绿色的<br>git branch -d dev  删除分支（-D强制删除）<br>git checkout dev  切换到dev分支上进行开发<br>git merge dev 合并分支（合并时应该在master分支上）</p>
-<p>如果在开发过程中发现主分支上有bug，但正在开发的dev分支没开发完，切记不要在master上直接开发，保存dev工作现场回到master上创建解决bug的分支如issue分支解决完回到master分支把issue分支合并在回到dev恢复现场<br>git stash 保存工作现场<br>git pop 恢复工作现场</p>
-<h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>1.工作区：工作代码<br>2.缓存区：.git文件夹下 是看不到的 绝的写的有问题可以从缓存区拿出来<br>3.仓库：代码如果没问题，执行git commit就可以一次性把暂存区的所有修改提交到分支推成一个真实的git版本。<br>git是一个快照，每次提交后都会记录一下这次操作的相关信息，根据id号回退和前进。还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。</p>
-<h3 id="推到github"><a href="#推到github" class="headerlink" title="推到github"></a>推到github</h3><p>1.在github上创建一个项目New repository<br>2.生成秘钥，每一个笔记本生成唯一的密钥（ssh可以不用密码）：settings-&gt;SSH and GPG keys -&gt; generating SSH keys -&gt; Generating a new SSH key and adding it to the ssh-agent -&gt; 根据命令找到本地用户下的.shh文件.pub后缀的公钥(公钥进行加密，本地电脑中的密钥进行解密)，拖到VSCode中复制 -&gt; new ssh key中粘贴<br>3.建立起桌面与github仓库的联系<br>git init<br>git add .<br>git commit -m “message”<br>git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:jerry996/ofo.git    本地仓库与远程建立连接<br>git push -u origin master  推到远程master仓库上<br>3.再次推代码<br>git pull origin master（先拉最新的代码）<br>git push origin master:dev（将新更改的代码推到dev分支上）</p>
-<h3 id="克隆项目"><a href="#克隆项目" class="headerlink" title="克隆项目"></a>克隆项目</h3><p>1.新建文件夹git init<br>2.git clone url</p>
-<h3 id="借助服务器跑代码"><a href="#借助服务器跑代码" class="headerlink" title="借助服务器跑代码"></a>借助服务器跑代码</h3><p>进入项目 -&gt; settings -&gt; options -&gt; GithubPages -&gt; source源码部分选择master分支 -&gt; Your site is ready to be published at + url -&gt; 就可通过此网址查看网站了</p>
-<h3 id="hexo新建一篇文章"><a href="#hexo新建一篇文章" class="headerlink" title="hexo新建一篇文章"></a>hexo新建一篇文章</h3><p>hexo new post name<br>hexo g    生成<br>hexo d    发布<br>hexo server    开启服务器</p>
+<h3 id="2-javascript特点"><a href="#2-javascript特点" class="headerlink" title="2.javascript特点:"></a>2.javascript特点:</h3><p>javascript是一种动态类型的、面向对象的脚本语言，它运行在宿主(host)环境中，它的宿主环境通常是一个Web浏览器。JavaScript中没有类的概念，它使用原型(prototype)实现继承。</p>
+<ul>
+<li>1.解释型语言：看一行执行一行。<br>编译型语言 ：c   c++   优点：快           缺点：移植性不好（不跨平台）<br>解释型语言 ：js   php  优点：跨平台    缺点：慢<br>Java既不是编译性语言也不是解释性语言<br>编译型语言编写的代码有错误，这些错误在编译阶段就能被发现，而解释型语言代码中的错误只能当道解释器执行到有关代码时才能被发现</li>
+<li>2.单线程：同一时间段只能做一件事，一行代码没有完成，不能进行下一个任务。<br>（优点:不会出错，同步加载）link标签的加载是异步的，html和css同时加载，js是单线程，准确来说js引擎是单线程</li>
+<li>3.js执行队列<br>轮转时间片：类似吃饭（吃一口饭吃一口菜）：计算机底层操作系统第一节专业知识<br>js引擎执行任务，把任务1和2以微秒和毫秒去切成无数个片段，把片段排成一个队列，顺序前后完全随机（争抢时间片，概率问题看谁能抢到），排好之后一个时间片一个时间片往js引擎里面送，js引擎以一个时间片为基准单位去执行这个时间片段，然后把任务1和2按片段去执行。</li>
+<li>4.变量<br>使用var来声明变量，则该变量是不可被删除的</li>
+<li>5.关于数字<br>1.变量数字最多16位<br>2.小数太多显示科学计数法<br>3.计算机中处理小数不准<br>4.Infinity代表了超出JavaScript处理范围的数值。也就是说JS无法处理的数值都是Infinity。</li>
+</ul>
+<h3 id="3-js运算符"><a href="#3-js运算符" class="headerlink" title="3.js运算符"></a>3.js运算符</h3><ul>
+<li>1.加减乘除<br>“+”：1.数学运算、字符串链接<br>2.任何数据类型加字符串都等于字符串(从左向右看)<br>“-”，“<em>”，“/“，“%”，”=“，“()” （优先级”=“最弱，”()”优先级较高）<br>“++”，“- -”，”+=“，“-=”，“/=“，“</em>=”，“%=”</li>
+<li>2.比较运算符：<br>“&gt;”，”&lt;”，”==”，“&gt;=”，“&lt;=”，”!=”<br>比较结果为boolean值。<br>字符串从第一位比较ASC码值（查字典）</li>
+<li>3.逻辑运算符：返回实际的值<br>1.“&amp;&amp;”逻辑与 ：第一个true返回第二个的值，第一个false返回第一个的值（返回假的）<br>&amp;&amp;运算是与运算，只有所有都为true，&amp;&amp;运算结果才是true：<br>true &amp;&amp; true; // 这个&amp;&amp;语句计算结果为true<br>true &amp;&amp; false; // 这个&amp;&amp;语句计算结果为false<br>false &amp;&amp; true &amp;&amp; false; // 这个&amp;&amp;语句计算结果为false<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">eg1:短路语句：先判断fn有没有值，fn内有值才能用</span><br><span class="line">var fn = data;</span><br><span class="line">fn &amp;&amp; xxxx(fn)</span><br><span class="line">eg2: 结果为20undefined。如果没有返回值，就会返回undefined</span><br><span class="line">var a = 10;</span><br><span class="line">var b = 9;</span><br><span class="line">document.write(a = ++b &amp;&amp; document.write(20))</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2.“||”逻辑或 ：第一个true返回第一个的值，第一个false返回第二个的值（返回真的）<br>||运算是或运算，只要其中有一个为true，||运算结果就是true：<br>false || false; // 这个||语句计算结果为false<br>true || false; // 这个||语句计算结果为true<br>false || true || false; // 这个||语句计算结果为true<br>兼容写法：<br>var a,b;<br>var e = a || b;<br>3.“!“逻辑非：<br>首先转成布尔类型<br>4.被认定为false的值： NaN， “ ”， 0， false，undefined， null<br>[] == []  / {} == {}     //false</p>
+<h3 id="4-数据类型"><a href="#4-数据类型" class="headerlink" title="4.数据类型"></a>4.数据类型</h3><p>一门语言使用的值的类型称为该语言的数据类型。<br>计算机顾名思义就是可以做数学计算的机器，因此，计算机程序理所当然地可以处理各种数值。但是，计算机能处理的远不止数值，还可以处理文本、图形、音频、视频、网页等各种各样的数据，不同的数据，需要定义不同的数据类型。在JavaScript中定义了以下几种数据类型：<br>1.不可改变的原始值（栈数据）：number、string、Boolean、undefined、null<br>2.可被改变的引用值（堆数据）：object、function、array、date、RegExp<br>3.null和undefined区别<br>null表示”没有对象”，即该处不应该有值。典型用法是：<br>（1） 作为函数的参数，表示该函数的参数不是对象。<br>（2） 作为对象原型链的终点。<br>undefined表示”缺少值”，就是此处应该有一个值，但是还没有定义。典型用法是：<br>（1）变量被声明了，但没有赋值时，就等于undefined。<br>（2) 调用函数时，应该提供的参数没有提供，该参数等于undefined。<br>（3）对象没有赋值的属性，该属性的值为undefined。<br>（4）函数没有返回值时，默认返回undefined。<br>4.栈数据和堆数据<br>注意 ： 引用值（堆数据）和非引用值（栈数据）存储方式不一样<br>栈方法：push和pop方法只发生在栈的顶部（在后面添加后面移除）<br>队列方法：push和shift方法（后面添加前面移除）<br>相反的方向模拟队列：unshift和pop（前端添加项 后端移除项目）<br>5.typeof六种数据类型<br>typeof 运算符：返回一个用来表示表达式 的数据类型 的字符串。<br>number，string，boolean，undefined，object，function<br>局限性：null和 [ ] { } 都是object</p>
+<h3 id="5-类型转换"><a href="#5-类型转换" class="headerlink" title="5.类型转换"></a>5.类型转换</h3><ul>
+<li>1.显式类型转换<br>Number(mix)（null –&gt; 0  /  undefined –&gt; NaN  /  true/false  –&gt; 1/0）<br>String(mix) 将目标转成字符串<br>Boolean() 将目标转成布尔值<br>parseFloat(string)  把目标转换成浮点型<br>xxx.toString(radix) 方法的调用   （target.toString()   undefined/null不能调用toString）<br>parseInt(string,radix基底2~36进制)  把目标转换成整形，舍去小数点后的任何字母<br>eg:把2进制10101010转换成16进制：<br>var num =parseInt(10101010, 2);   //把2进制的1010转换成十进制<br>var num1 = num.toString(16)   //把10进制的num转换成16进制<br>console.log(num1)<br>var num = number（‘11a’）  //NaN</li>
+<li>2.隐式类型转换<br>1.isNaN（） –&gt; Number()  （隐式调用number执行）<br>isNaN(undefined) –&gt; //true<br>isNaN(null) –&gt; //false<br>系统中定义isNaN的方法：现将NaN变成字符串，那么两个NaN就相等了<br>eg: isNaN方法：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function myIsNan(num) &#123;</span><br><span class="line">    var ret = Number(num);</span><br><span class="line">        ret += &quot;&quot;;</span><br><span class="line">        if(ret == &quot;NaN&quot;) &#123;</span><br><span class="line">        return true;</span><br><span class="line">        ) else &#123;</span><br><span class="line">        return false;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2.++/- -、+/-  （一元正负）<br>3.+<br>4.- * / % –&gt;  number<br>5.&amp;&amp;  || ！<br>6.&lt;  &gt;  &lt;=  &gt;= ：  比较运算符  （一侧是字符串，把字符串转换成数字进行比较。两侧都是字符串，不转换按照字符串比较规则进行比较）<br>7.== !=<br>3.不发生类型转换（不希望发生隐式类型转换的时候）<br> ===（严格比较，要求值和类型都相等）   !==</p>
 
       
 
@@ -216,7 +226,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">工具</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ECMAScript</a>
         		</li>
       		
 		</ul>
@@ -272,7 +282,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/30/git命令/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/30/JS基本语法/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -286,18 +296,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/07/30/HTML/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/07/30/预编译/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          HTML
+          预编译
         
       </div>
     </a>
   
   
-    <a href="/2018/07/30/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2018/07/30/iframe/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">iframe</div>
       <i class="icon-circle-right"></i>
     </a>
   

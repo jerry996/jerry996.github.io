@@ -6,20 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>git命令 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="svn与git区别： 1.Git分布式：123每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网； 2.中央版本库：SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问">
-<meta name="keywords" content="工具">
-<meta property="og:type" content="article">
-<meta property="og:title" content="git命令">
-<meta property="og:url" content="http://yoursite.com/2018/07/30/git命令/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="svn与git区别： 1.Git分布式：123每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网； 2.中央版本库：SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-30T13:10:18.569Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git命令">
-<meta name="twitter:description" content="svn与git区别： 1.Git分布式：123每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网； 2.中央版本库：SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问">
+<meta name="twitter:title" content="Hexo">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -141,14 +136,616 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-git命令" class="article article-type-post " itemscope itemprop="blogPost">
+            
+  
+    <article id="post-Web安全" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      git命令
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/Web安全/">Web安全</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/30/Web安全/" class="archive-article-date">
+  	<time datetime="2018-07-30T13:36:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="HTTP-SSL-认证-完整性保护-HTTPS"><a href="#HTTP-SSL-认证-完整性保护-HTTPS" class="headerlink" title="HTTP + SSL + 认证 + 完整性保护 = HTTPS"></a>HTTP + SSL + 认证 + 完整性保护 = HTTPS</h3><ul>
+<li>HTTPS可以有效防止信息窃听或身份伪装等安全问题。HTTPS是身披SSL外壳的HTTP。HTTPS并非是一种新协议，只是HTTP通信接口部分用SSL和TLS协议代替而已。</li>
+<li>通常HTTP直接和TCP通信，当使用SSL时，则演变成先和SSL通信，再由SSL和TCP通信了。在采用SSL后，HTTP就拥有了HTTPS的加密、证书和完整性保护这些功能。</li>
+<li>缺点：使用SSL处理速度会变慢：通信慢、大量消耗CPU导致处理速度变慢。</li>
+</ul>
+<h3 id="Web的攻击技术"><a href="#Web的攻击技术" class="headerlink" title="Web的攻击技术"></a>Web的攻击技术</h3><p>简单的HTTP协议本身不存在安全性问题，应用HTTP协议的服务器和客户端，以及运行在服务器上的Web资源才是攻击目标。</p>
+<ul>
+<li>1.XXS<br>跨站脚本攻击：通过存在安全漏洞的网站内运行非法的HTML标签或JS脚本（虚假表单骗取用户信息、窃取cookie值）</li>
+<li>2.CSRF<br>跨站请求伪造：强制对已登录的用户进行个人信息的更等某些状态的更新。（留言板发表评论、购买商品、更新设定信息）</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">HTTP协议</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/30/Web安全/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Web服务器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/Web服务器/">Web服务器</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/30/Web服务器/" class="archive-article-date">
+  	<time datetime="2018-07-30T13:34:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-用单台虚拟主机实现多个域名"><a href="#1-用单台虚拟主机实现多个域名" class="headerlink" title="1.用单台虚拟主机实现多个域名"></a>1.用单台虚拟主机实现多个域名</h3><ul>
+<li>HTTP/1.1规范允许一台HTTP服务器搭建多个Web站点。即使物理层面只有一台服务器，但只要使用虚拟主机的功能，则可以假想已有多台服务器。（不同域名有可能为相同的IP地址）</li>
+<li>如果一台服务器内托管了两个不同的域名，就要在发送HTTP请求时，在首部完整指定URL。</li>
+</ul>
+<h3 id="2-通信数据转发程序：代理、网关、隧道"><a href="#2-通信数据转发程序：代理、网关、隧道" class="headerlink" title="2.通信数据转发程序：代理、网关、隧道"></a>2.通信数据转发程序：代理、网关、隧道</h3><ul>
+<li>HTTP通信时，除客户端和服务器以外，还有一些用于数据转发的应用程序，他们可以配合服务器工作。</li>
+<li>1.代理：代理服务器接收客户端发送的请求转发给其他的服务器。从源服务器返回的响应经过代理服务器再传给客户端。好处：利用缓存技术减少网络带宽的流量。<br>缓存代理：当代理转发响应时，缓存代理会预先将资源的副本缓存在代理服务器上。当代理再次接收到相同资源的请求时，就可以不从源服务器那里获取资源，而是将之前缓存的资源作为响应返回。利用缓存可避免多次从源服务器转发资源。<br>透明代理：转发请求或响应的时候，不对报文做任何加工的代理。</li>
+<li>2.网关：可以由HTTP请求转化为其他协议的通信。好处：可以在客户端和网关通信线路上加密，提高通信的安全性。（购物网站）</li>
+<li>3.隧道：可以和远距离的服务器安全通信。使用SSL加密手段进行通信，隧道本身不会解析HTTP请求。</li>
+</ul>
+<h3 id="3-保存资源的缓存"><a href="#3-保存资源的缓存" class="headerlink" title="3.保存资源的缓存"></a>3.保存资源的缓存</h3><ul>
+<li>缓存是指代理服务器或客户端本地磁盘内保存的资源副本。利用缓存可以减少对源服务器的访问，节省通信时间。</li>
+<li>1.缓存服务器是代理服务器的一种。<br>缓存代理：当代理转发响应时，缓存代理会预先将资源的副本缓存在代理服务器上。当代理再次接收到相同资源的请求时，就可以不从源服务器那里获取资源，而是将之前缓存的资源作为响应返回。利用缓存可避免多次从源服务器转发资源。</li>
+<li>2.客户端缓存称为临时文件。浏览器缓存如果有效，就不必向服务器请求相同的资源了，可以直接从本地磁盘内读取。</li>
+<li>3.若判断缓存失效，缓存服务器（浏览器）会再次从源服务器上获取（请求）新资源</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">HTTP协议</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/30/Web服务器/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-HTTP协议" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/HTTP协议/">HTTP协议</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/30/HTTP协议/" class="archive-article-date">
+  	<time datetime="2018-07-30T13:32:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h3><ul>
+<li>1.HTTP协议用于客户端与服务器之间的通信<br>应用HTTP协议时，必定有一端是客户端，另一端是服务器。而HTTP能够区分哪端是客户顿哪端是服务器</li>
+<li>2.通过请求和相应的交换达成通信<br>HTTP协议规定，请求从客户端发出（请求报文），最后服务器相应该请求并返回（相应报文）。</li>
+<li>3.HTTP是不保存状态的一个协议<br>即无状态协议，HTTP自身不对请求和响应事件的通信状态进行保存。这是为了可以更快的处理大量事物。HTTP/1.1虽然是无状态协议，但为了实现保持状态的功能，引入了cookie技术，这样就可以管理状态了。（网站不需要重复登录）</li>
+<li>4.HTTP使用URL让客户端定位到资源</li>
+<li>5.告知服务器意图的HTTP方法<br>GET：获取资源<br>POST：传输实体主体</li>
+<li>6.持久连接节省通信量<br>HTTP协议初始版本每进行一次HTTP请求就要断开一次TCP连接，这样会增加通信量的开销<br>1.持久连接：建立一次连接之后进行多次请求和响应 的交互。好处：Web页面打开速度变快。<br>2.管线化：持久连接使得管线化方式发送成为可能。管线化技术出现以后，不用等待响应就可直接发送下一个请求。这样就能做到同时并行发送多个请求，而不需要一个接一个的等待响应了。</li>
+<li>7.使用cookie的状态管理<br>cookie技术通过在请求和响应报文中写入cookie信息来控制客户端的状态。cookie会根据服务器响应    报文中的Set-Cookie通知客户端保存cookie，下次客户端再往该服务器发送请求时，客户端会自动在请求报文中加入cookie然后发送出去。<br>服务器发现客户端发送过来的cookie之后，检查是哪一个客户端发送过来的连接请求，然后对比服务器上的记录，得到之前的状态信息。</li>
+</ul>
+<h3 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h3><ul>
+<li>WebSocket使浏览器与服务器之间可以双向同时通信。</li>
+<li>一旦建立起WebSocket通信连接，之后所有的通信都依靠这个专用协议进行。通信过程中可发送任意格式的数据。由于是建立在HTTP基础上的协议，因此连接的发起方仍是客户端。成功握手确立WebSocket连接之后，通信时不再使用HTTP数据帧，而是采用WebSocket独立的数据帧。</li>
+</ul>
+<h3 id="状态码的工作机制"><a href="#状态码的工作机制" class="headerlink" title="状态码的工作机制"></a>状态码的工作机制</h3><ul>
+<li>HTTP状态码负责表示客户端HTTP请求的返回结果，可以知道服务器是正常处理了请求还是出现了错误。<br>1xx：信息性状态码<br>2xx：成功状态码<br>200：请求已经被服务器正常处理<br>204：请求处理成功，但是没有资源可以返回<br>205：重置内容<br>206：表示客户端进行了范围请求，而服务器成功执行了这部分的GET请求<br>3xx：重定向状态码<br>301：永久性重定向<br>302：临时性重定向<br>303：请求的对应资源存在着另一个URI，应使用GET方法请求。<br>304：服务器资源未改变，可直接使用客户端未过期的资源<br>4xx：客户端错误状态码<br>400：请求报文中存在语法错误<br>401：发送的请求需要有通过HTTP认证的认证信息<br>403：不允许访问该资源<br>404：服务器上没有该资源<br>5xx：服务器错误状态码<br>500：服务器端在执行请求时发生错误<br>503：服务器暂时处于超负载或正在停机维护，无法处理请求</li>
+</ul>
+<h3 id="请求-amp-响应是怎样运作的"><a href="#请求-amp-响应是怎样运作的" class="headerlink" title="请求 &amp; 响应是怎样运作的"></a>请求 &amp; 响应是怎样运作的</h3><ul>
+<li>用于HTTP协议交互的信息叫做HTTP报文，报文分为 请求报文 和 响应报文。报文本身是多行数据构成的字符串文本。通常不一定要有报文主体。</li>
+<li>请求报文：<br>1.请求头：请求方法，请求URL，HTTP协议版本<br>2.请求行：请求首部字段<br>3.请求主体：内容实体（应被发送的数据）</li>
+<li>响应报文：<br>1.响应头：HTTP版本，状态码，状态描述<br>2.响应行：首部字段（创建相应的日期时间）<br>3.相应主体：资源实体的主体</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">HTTP协议</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/30/HTTP协议/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-TCP-IP" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/TCP-IP/">TCP/IP</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/30/TCP-IP/" class="archive-article-date">
+  	<time datetime="2018-07-30T13:31:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="使用HTTP访问Web"><a href="#使用HTTP访问Web" class="headerlink" title="使用HTTP访问Web"></a>使用HTTP访问Web</h3><ul>
+<li>浏览器根据 Web地址栏中指定的URL访问地址，使用HTTP协议的通信，从服务器获取资源从而显示出Web页面。Web使用一种名为HTTP的协议作为规范，完成从客户端到服务器等一系列运作流程。而协议是指规则的约定，可以说Web是建立在HTTP协议上通信的。</li>
+<li>三项WWW构建技术：HTML+HTTP+URL。借助多文档间互相关联形成的超文本，连成可互相参阅的WWW。</li>
+</ul>
+<h3 id="网络基础TCP-IP"><a href="#网络基础TCP-IP" class="headerlink" title="网络基础TCP/IP"></a>网络基础TCP/IP</h3><ul>
+<li>1.TCP/IP协议<br>HTTP 协议 是 TCP / IP 协议 的子集。<br>通常使用的网络（包括互联网）是在TCP/IP协议的基础上运作的，HTTP属于它内部的一个子集。计算机与网络设备要互相通信，双方就必须基于相同的规则，我们把这种规则称为协议。TCP/IP是互联网相关各协议的总称，像这样把互联网相关的协议集合起来总称为TCP/IP<br>TCP：TCP为了更容易传送大数据，把数据分割成报文段。而且TCP能够确认数据最终是否送达给对方。为了准确无误的将数据送达目标处，TCP采用三次握手策略。<br>IP：与IP地址不同，IP是一种协议名称。IP协议的作用是把各种数据包传送给对方。<br>DNS：提供通过域名查找IP地址，或从IP地址反查域名的服务。</li>
+<li>2.TCP/IP分层管理<br>应用层、传输层、网络层、数据链路层。<br>TCP/IP层次化之后，只需把变动的层替换掉即可，每个层次内部的设计就能够自由改动了。<br>1.应用层：通信活动。如：FTP、DNS、HTTP。<br>2.传输层：两台计算机之间的数据传输。如：TCP、UDP（非链接）。<br>3.网络层：选择一条传输路线。如：IP<br>4.数据链路层：处理链接网络的硬件部分。</li>
+<li>3.TCP/IP通信传输流<br>1.在应用层发出请求Web页面的HTTP请求（HTTP协议）<br>2.为了传输方便，在传输层（TCP协议）把从应用层收到的数据（HTTP请求报文）进行分割，并在各个报文上打上标记序号以及端口号后转发给网络层<br>3.在网络层（IP协议）增加通信目的地的地址后转发给链路层<br>4.发送端 在层与层之间传输数据，每经过一层打上一个该层所属的首部信息。反之接收端 在层与层传输数据时，每经过一层会把相应的首部消去。</li>
+</ul>
+<h3 id="三次握手-amp-四次挥手"><a href="#三次握手-amp-四次挥手" class="headerlink" title="三次握手 &amp; 四次挥手"></a>三次握手 &amp; 四次挥手</h3><ul>
+<li>1.三次握手：客户端与服务器建立连接<br>1.客户端发送 SYN 数据包给服务器<br>2.服务器回传一个 SYN / ACK 数据包<br>3.客户端回传一个 ACK 数据包</li>
+<li>2.四次挥手：客户端与服务器断开连接<br>1.客户端发送 FIN 数据包给服务器<br>2.服务器返回 ACK 报文<br>3.服务器与客户端断开连接, 发送 FIN 报文<br>4.客户端返回一个 ACK 报文, 挥手结束</li>
+</ul>
+<h3 id="在浏览器里输入一个url发生了什么"><a href="#在浏览器里输入一个url发生了什么" class="headerlink" title="在浏览器里输入一个url发生了什么"></a>在浏览器里输入一个url发生了什么</h3><p>1.浏览器通过DNS把域名解析成ip地址<br>2.客户端通过TCP三次握手连接到服务器<br>3.客户端向服务端发送HTTP请求服务器里面的资源文档<br>4.服务器向客户端返回HTTP响应<br>5.客户端和服务器断开四次挥手，客户端开始解释处理HTML文档</p>
+<h3 id="URI-amp-URL"><a href="#URI-amp-URL" class="headerlink" title="URI &amp; URL"></a>URI &amp; URL</h3><p>URI：统一资源标识符。用字符串标识某一互联网资源。<br>URL：统一资源定位符。表示资源的地点，可见URL 为 URI 的子集。</p>
+<h3 id="DNS-amp-CDN"><a href="#DNS-amp-CDN" class="headerlink" title="DNS&amp;CDN"></a>DNS&amp;CDN</h3><p>DNS：域名和IP地址相互映射的一个分布式数据库<br>CDN：内容分发网络。其目的是使用户可就近取得所需内容，解决 Internet网络拥挤的状况，提高用    户访问网站的响应速度。</p>
+<h3 id="HTTP-1-0"><a href="#HTTP-1-0" class="headerlink" title="HTTP/1.0"></a>HTTP/1.0</h3><p>HTTP/1.0虽然是初期标准，但至今仍在服务器端广泛使用<br>HTTP/1.1是目前主流HTTP协议版本<br>HTTP/2.0目标是改善用户在使用Web时的速度体验。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">HTTP协议</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/30/TCP-IP/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-CSS" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/CSS/">CSS</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/30/CSS/" class="archive-article-date">
+  	<time datetime="2018-07-30T13:18:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-选择器"><a href="#1-选择器" class="headerlink" title="1.选择器"></a>1.选择器</h3><ul>
+<li><p>1.简单选择器<br>1.id选择器      #only    身份证<br>2.class选择器    .demo    衣服<br>3.属性选择器    [id] {} 或  [id=”only”]{}<br>如果希望选择有某个属性的元素，而不论属性值是什么，可以使用简单属性选择器<br>[class]{background: red;}<br>4.伪类选择器<br>伪类选择器 一般是指 用来显示特殊效果（比如鼠标响应等）的选择器<br>a: hover{background: red;}<br>5.标签选择器<br>6.通配符选择器 *</p>
+</li>
+<li><p>2.复杂选择器<br>1.父子选择器<br>div span{~}<br>2.直接子元素选择器<br>div &gt; em{~}<br>3.并列选择器（不加空格）<br>div.demo{~}<br>4.分组选择器（简化代码）<br>em, strong, span{~} </p>
+</li>
+</ul>
+<h3 id="2-css权重（256进制）"><a href="#2-css权重（256进制）" class="headerlink" title="2.css权重（256进制）"></a>2.css权重（256进制）</h3><p>！important                Infinity（无限）<br>行间样式                    1000<br>id                        100<br>class / 属性选择器 / 伪类        10<br>标签 / 伪元素                1<br>通配符                    0<br>！important &gt; 行间样式 身上 &gt; id &gt; class / 属性选择器 &gt; div &gt; *<br>（优先级相同，后面会覆盖前面）</p>
+<h3 id="3-长度单位"><a href="#3-长度单位" class="headerlink" title="3.长度单位"></a>3.长度单位</h3><p>有两种类型的长度单位：相对和绝对。如果数字是0则可以省略单位。</p>
+<ul>
+<li>1.绝对长度：<br>是一个固定的值，它反映一个真实的物理尺寸，不依赖于环境（显示器、分辨率、操作系统等）<br>cm、mm、px、pt、pc</li>
+<li>2.相对长度：<br>指定了一个长度相对于另一个长度的属性，对于不同设备相对长度更适用。<br>em、rem、ex、ch、vm、vh<br>em：一般浏览器默认字体大小是16px，1em=16px。如果你在body上设置一个字体大小，那么在body内任何子元素的em值都等于这个字体大小。<br>rem：相对于根元素(html)的font-size属性计算值<br>ex：取当前作用效果字体的小写x高度，无法确定就取em的一半作为ex<br>ch：节点字体所使用的0的宽度，无法确定0的宽度就取em的一半作为ex<br>vm：视窗宽度，1vm=视窗宽度的1%<br>vh：视窗高度，1vh=视窗高度的1%</li>
+</ul>
+<h3 id="4-字体颜色设置（16进制）"><a href="#4-字体颜色设置（16进制）" class="headerlink" title="4.字体颜色设置（16进制）"></a>4.字体颜色设置（16进制）</h3><ul>
+<li>1.纯英文单词<br>red，green，blue</li>
+<li>2.颜色代码<br>r        g        b<br>00~ff    00~ff    00~ff  颜色的饱和程度<br>  #000000（#000可简写）黑<br>  (# f f f) 白</li>
+<li>3.颜色函数<br>rgb(  ,  ,  )数字0~255<br>rgb(0,0,0)黑色<br>rgb(255,255,255)白色</li>
+</ul>
+<h3 id="5-display"><a href="#5-display" class="headerlink" title="5.display"></a>5.display</h3><ul>
+<li>1.块级元素（block）：div，p，ul li，ol li，form，address<br>feature：总是在新行开始，占据一整行<br>宽度始终与浏览器宽度一样与内容无关<br>可以通过css改变宽高</li>
+<li>2.行级元素（inline）：span，strong，em，a，del<br>feature：与其他元素在一行上<br>内容决定宽度<br>不可以通过css改变宽高</li>
+<li>3.行级块元素（inline-block）：img，<br>feature：内容决定大小<br>可以改变宽高<br>常见的行级元素和块级元素<br>行级元素:span a em strong del<br>块级元素:div p address ulli olli form</li>
+</ul>
+<h3 id="6-定位"><a href="#6-定位" class="headerlink" title="6.定位"></a>6.定位</h3><ul>
+<li>1.relative相对定位：<br>1）保留原来的位置进行定位<br>2）相对于自己原来的位置进行定位<br>3）移动后，会导致它覆盖其他框</li>
+<li>2.absolute绝对定位：<br>1）脱离原来位置进行定位<br>2）相对于最近的有定位的祖先元素进行定位，没有则相对于文档进行定位<br>3）可以通过设置z-index控制堆放次序</li>
+<li>3.fixed固定定位：<br>固定定位（广告定位）<br>一般：一般用relative做参照物，absolute进行定位，以减小对后续元素的破坏（absolute会对后面元素有影响）relative当做支架，absolute当做定位技术。<br>position属性的合法值有：static、fixed、relative、absolute。static时position属性的默认值。</li>
+</ul>
+<h3 id="7-float"><a href="#7-float" class="headerlink" title="7.float"></a>7.float</h3><ul>
+<li><p>1.一开始解决报纸排版问题。文字环绕图片（报纸布局）文字用p标签包住，图片设置浮动，产生浮动流。<br>当一个元素浮动了之后，那么<br>1.浮动元素才能看到浮动元素<br>2.文本类元素（有inline / inline-block 属性的元素或者文本）<br>3.bfc元素<br>其他元素都看不到他（即可以到他的位置上）</p>
+</li>
+<li><p>2.清除浮动流<br>子元素都浮动之后，父元素包不住子元素，清除浮动流用 clear：left/right/both/none，只在块元素block上生效。变成块级display:block伪元素的属性clear才好使，外面的wrapper才可以清除标签内的浮动流。<br>.father::after{<br>content:””;<br>display:block;<br>clear: both;<br>}</p>
+</li>
+</ul>
+<h3 id="8-关于margin的两个bug（水平方向无bug，两个bug都是垂直方向）"><a href="#8-关于margin的两个bug（水平方向无bug，两个bug都是垂直方向）" class="headerlink" title="8.关于margin的两个bug（水平方向无bug，两个bug都是垂直方向）"></a>8.关于margin的两个bug（水平方向无bug，两个bug都是垂直方向）</h3><ul>
+<li>1.margin塌陷 （一个元素套着另一个元素，都设置了垂直方向的margin，那么就以大的为准）<br>方法一：在父元素身上加个顶border-top(土法子)<br>方法二：bfc     块级 格式化 上下文 block format contexting每个盒子都是一个独立的渲染单元，渲染规则是一样的，设置bfc语法可以改变盒子的渲染规则(解决父子级margin垂直方向的bug的四个语法)让父级元素触发bfc：float:left/right;浮动元素<br>position:absolute;绝对定位元素<br>overflow:hidden;<br>  display:inline-block;</li>
+<li>2.margin合并问题（左右不共用，上下共用）<br>触发概率大（纵向）（不用bfc，多一个功能鸡肋，直接设置上下，可能会触发其他的问题</li>
+</ul>
+<h3 id="9-bfc语法"><a href="#9-bfc语法" class="headerlink" title="9.bfc语法"></a>9.bfc语法</h3><p>设置bfc语法可以改变盒子的渲染规则，如果一个元素符合了成为BFC的条件，该元素内部元素的布局和定位就和外部元素互不影响(除非内部的盒子建立了新的 BFC)，是一个隔离了的独立容器</p>
+<ul>
+<li>1.形成 BFC 的条件<br>1、浮动元素，float：left/right；<br>2、绝对定位元素，position：absolute；<br>3、display：block；<br>4、overflow：hidden </li>
+<li>2.BFC常见作用<br>1、包含浮动元素，用bfc来清除浮动流<br>问题案例：高度塌陷问题：在通常情况下父元素的高度会被子元素撑开，而在这里因为其子元素为浮动元素所以父元素发生了高度坍塌，上下边界重合。这时就可以用bfc来清除浮动了。<br>2、不被浮动元素覆盖 ，触发bfc来解决遮挡问题。<br>问题案例： div浮动兄弟遮盖问题：由于左侧块级元素发生了浮动，所以和右侧未发生浮动的块级元素不在同一层内，所以会发生div遮挡问题。可以给被覆盖的右侧块加 overflow: hidden，触发bfc来解决遮挡问题。 右侧块排列在左侧快右面。<br>3、 BFC 会阻止外边距折叠 ，解决margin的塌陷现象<br>问题案例：margin塌陷问题：在标准文档流中，块级标签之间竖直方向的margin会以大的为准，这就是margin的塌陷现象。可以用overflow：hidden产生bfc来解决。 </li>
+</ul>
+<h3 id="10-伪元素（IE8开始有）：天生存在于任何一个标签内"><a href="#10-伪元素（IE8开始有）：天生存在于任何一个标签内" class="headerlink" title="10.伪元素（IE8开始有）：天生存在于任何一个标签内"></a>10.伪元素（IE8开始有）：天生存在于任何一个标签内</h3><ul>
+<li>1.before任何一个逻辑之前，after任何一个逻辑之后，在content内加内容就可以从标签内看到。<br>(before)<br>handsome<br>(after)<br>span::before/after{content:” “}  写伪元素必须写content</li>
+<li>2.伪元素天生的display是inline</li>
+</ul>
+<h3 id="11-规定"><a href="#11-规定" class="headerlink" title="11.规定"></a>11.规定</h3><ul>
+<li>1.标签规定<br>a标签不能再嵌套a标签<br>行级元素能套行级元素<br>块级元素能套行级元素和块级元素<br>行及元素不能套块级元素，但是div里嵌套p是不可以的（例外）</li>
+<li>2.文字溢出打点<br>text-overflow：ellipsis;    文本溢出要展示的样式（ellipse椭圆，椭圆的复数们就是…）<br>white-space: nowrap;    文本的排列形式，nowrap是永远不换行<br>多行文字溢出打点，只能手写<br>（多行打点的兼容性不好，移动端好使（css3），但是pc端（电脑端）兼容性不好）</li>
+<li>3.注意<br>伪元素天生的display是inline<br>clear只在块元素block上生效<br>position：absolute；和float：left/right；都会把元素隐式的变成block</li>
+<li>4.font-size:20px;    设置的是字体的高</li>
+<li>5.编写CSS让一个已知宽高的div，在PC/手机端水平垂直居中。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">position: relative;</span><br><span class="line">   margin: 0 auto;</span><br><span class="line"></span><br><span class="line">position: relative;</span><br><span class="line">   top: 50%;</span><br><span class="line">   left: 50%;</span><br><span class="line">   margin-top: -50px;</span><br><span class="line">   margin-left: -50px;</span><br><span class="line"></span><br><span class="line">position: relative;</span><br><span class="line">   top: 50%;</span><br><span class="line">   left: 50%;</span><br><span class="line">   transform: translate(-50%, -50%)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="用css画出一个三角形"><a href="#用css画出一个三角形" class="headerlink" title="用css画出一个三角形"></a>用css画出一个三角形</h3><p>利用border（border-style：solid / dotted条状虚线）</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/30/CSS/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-HTML" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/HTML/">HTML</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/30/HTML/" class="archive-article-date">
+  	<time datetime="2018-07-30T13:07:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-给浏览器设置字典"><a href="#1-给浏览器设置字典" class="headerlink" title="1.给浏览器设置字典"></a>1.给浏览器设置字典</h3><p>在head中写<meta charset="utf-8">属性写在标签的头标签上<br>charset 编码字符集<br>gb2312 亚裔字符集（识别简体中文，不识别繁体）<br>gbk 包含所有亚裔字符集（识别繁体）<br>unicode 万国码<br>utf-8 最常用的万国码</p>
+<h3 id="2-搜索引擎爬虫"><a href="#2-搜索引擎爬虫" class="headerlink" title="2.搜索引擎爬虫"></a>2.搜索引擎爬虫</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;html lang=&quot;en，zh&quot;&gt;告诉搜索引擎爬虫，我们的网站是关于什么内容的</span><br><span class="line">&lt;meta content=&quot;服装&quot; name=&quot;keywords&quot;&gt; keywords关键字</span><br><span class="line">&lt;meta content=&quot;穿了不想脱&quot; name=&quot;description&quot;&gt; description描述性语言</span><br></pre></td></tr></table></figure>
+<h3 id="3-标签介绍"><a href="#3-标签介绍" class="headerlink" title="3.标签介绍"></a>3.标签介绍</h3><ul>
+<li>1.空格/回车<br>空格和回车都是 ： 文本分隔符<br>空格文本的展示形式：html编码  &amp;nbsp</li>
+<li>2.标签在文本中的展示形式<br>尖角号  (&amp;lt) less than<br>  (&amp;gt) great than</li>
+<li>3.单标签.<br>回车br<br>水平线hr</li>
+</ul>
+<h3 id="4-列表"><a href="#4-列表" class="headerlink" title="4.列表"></a>4.列表</h3><ul>
+<li>1.有序列表   order list<br>type=”A / a / I / i / 1”</li>
+<li>2.无序列表（菜单项导航栏，属性只有type可更改）unorder list<br>type=”disc实心圆  (discircle)/ circle空心圆 / square方块”</li>
+</ul>
+<h3 id="5-图片"><a href="#5-图片" class="headerlink" title="5.图片"></a>5.图片</h3><ul>
+<li>1.网上的资源地址url，在新标签页中打开图片，即为服务器地址</li>
+<li>2.本地的相对路径 ，html 文件与图片在同一文件夹下 123.jpg</li>
+<li>3.本地的绝对路径，地址需要写全 D：/a/b/c/123.jpg<br>D：/a/b/lesson2.html<br>D：/a/b/123.jpg，相对<br>D：/a/b/c/123.jpg，绝对<br>alt  图片占位符：当图片打不开或地址错误时展示文字信息<br>title（图片提示符）鼠标移入有显示</li>
+</ul>
+<h3 id="6-a标签"><a href="#6-a标签" class="headerlink" title="6.a标签"></a>6.a标签</h3><ul>
+<li>1.超链接<br>href，hypertext reference超文本引用，指向的目标地址<br>target=”_blank”在新标签页中打开链接</li>
+<li>2.作为锚点<br>anchor锚，定在某个点上（如，置顶）</li>
+<li>3.打电话，发邮件</li>
+<li>4.协议限定符，无限死循环。<br>应用：a标签可以包裹任何东西</li>
+</ul>
+<h3 id="7-form表单（前端数据发给后端工程师）"><a href="#7-form表单（前端数据发给后端工程师）" class="headerlink" title="7.form表单（前端数据发给后端工程师）"></a>7.form表单（前端数据发给后端工程师）</h3><ul>
+<li>1.method=“get/post”发送数据的方法。<br>get传递数据拼接到uel后面，传递给form表单上设置的action后台文件里，跳转到后台文件的页面。（此方法要通过网络访问）</li>
+<li>2.type=”单选框radio/复选框checkbox/button/password/text/submit/reset”</li>
+<li>3.name=规定表单的名称（有name才能提交成功）(name令单选框为一道题，value数据值)</li>
+<li>4.加默认选中checked</li>
+<li>5.下拉菜单select</li>
+</ul>
+<h3 id="8-主流浏览器及其内核"><a href="#8-主流浏览器及其内核" class="headerlink" title="8.主流浏览器及其内核"></a>8.主流浏览器及其内核</h3><p>Google chrome    Webkit /  blink  (市场份额全球第一)<br>Safari（冲浪）        Webkit<br>IE                trident<br>Firefox            Gecko<br>Opera            presto</p>
+<h3 id="9-数据"><a href="#9-数据" class="headerlink" title="9.数据"></a>9.数据</h3><ul>
+<li><p>1.表格标签<br>table元素包含一个或多个tr、th以及td元素。<br>tr表格行，th表头（加粗），td表格单元。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;table border=&quot;1&quot;&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;th&gt;Month&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;Savings&lt;/th&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;January&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;$100&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.标题标签<br>html dl、dt、dd是一组合标签。dt和dd是放于dl标签内，dt与dd处于同级标签。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt; </span><br><span class="line">    &lt;dt&gt;标题1&lt;/dt&gt; </span><br><span class="line">    &lt;dd&gt;列表1&lt;/dd&gt; </span><br><span class="line">    &lt;dd&gt;列表2&lt;/dd&gt; </span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="10-请使用至少两种方案-实现左中右三栏布局，左栏定宽100px，右栏定宽100px，中栏宽度不固定，三栏宽度加起来正好是100"><a href="#10-请使用至少两种方案-实现左中右三栏布局，左栏定宽100px，右栏定宽100px，中栏宽度不固定，三栏宽度加起来正好是100" class="headerlink" title="10.请使用至少两种方案 实现左中右三栏布局，左栏定宽100px，右栏定宽100px，中栏宽度不固定，三栏宽度加起来正好是100%"></a>10.请使用至少两种方案 实现左中右三栏布局，左栏定宽100px，右栏定宽100px，中栏宽度不固定，三栏宽度加起来正好是100%</h3><ul>
+<li>1.绝对定位方法：用绝对定位固定在窗口两边，中间采用自适应宽度，利用margin属性把两边撑开。缺点：中间有最小宽度的限制，当宽度小到一定值，会发生元素重叠的情况</li>
+<li>2.浮动方法：此方法要让中间内容放在最后面，左列左浮动，右列右浮动，中间利用浮动的跟随性，实现三列自适应布局。缺点：中间内容不能使用clear：both属性</li>
+<li>3.margin负值方法：此方法要让中间内容放在最前面，并且要使用一个容器把其包起来，width设置为100%，随屏幕自适应，然后让外层元素整体浮动，内层为真正的内容。左右两列均采用margin负值定位，左列左浮动，设置margin-left为-100%,右列也左浮动，然后设置margin-left为自身宽度的负值。优点：三列相互关联，受到内部影响不大。缺点：比较难理解，相对其他比较复杂<br>PS：除了第一种绝对定位方法可以不在意左中右三列div的顺序，第二种margin负值和第三种浮动方法都需要注意左中右三列div的顺序，第三种方法需要给中间内容套一层父级div元素。以上就是我学习的三种三列自适应布局的方法。</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/30/HTML/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-git命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/git命令/">git命令</a>
     </h1>
   
 
@@ -181,32 +778,6 @@
       
 
       
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/wei.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
     </div>
     <div class="article-info article-info-index">
       
@@ -225,84 +796,16 @@
       
 
       
-
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/30/git命令/">展开全文 >></a>
+        </p>
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/30/git命令/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2018/07/30/HTML/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          HTML
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2018/07/30/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -322,14 +825,94 @@
 
 
 
-  
-  
-  
 
   
-
+    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/hello-world/">Hello World</a>
+    </h1>
   
 
+        
+        <a href="/2018/07/30/hello-world/" class="archive-article-date">
+  	<time datetime="2018-07-30T11:26:07.217Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">工具</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/30/hello-world/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
   
 
 
@@ -352,8 +935,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
-		isPost: true,
+		isHome: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
