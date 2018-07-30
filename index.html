@@ -71,7 +71,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/jerry996" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 		        
@@ -106,7 +106,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/jerry996" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 			        
@@ -133,6 +133,88 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-git命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/git命令/">git命令</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/30/git命令/" class="archive-article-date">
+  	<time datetime="2018-07-30T12:53:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="svn与git区别："><a href="#svn与git区别：" class="headerlink" title="svn与git区别："></a>svn与git区别：</h3><p>1.Git分布式：<br>每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网；<br>2.中央版本库：<br>SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问题时，所有工作成员都一起瘫痪。SVN在Commit前，我们都建议是先Update一下，跟本地的代码编译没问题，并确保开发的功能正常后再提交。当你提交你的完成品时，它将直接记录到中央版本库。当你发现你的完成品存在严重问题时，你已经无法阻止事情的发生了。如果网路中断，你根本没办法提交！<br>每一个Git都是一个版本库。主要版本库发生了什麼事，工作成员仍然可以在自己的本地版本库提交，等待主要版本库恢复即可。工作成员也可以提交到其他的版本库。而git的提交完全属於本地版本库的活动。而你只需“推”（git push）到主要版本库即可。Git的“推”其实是在执行“同步”（Sync）。<br>3.分支：<br>在SVN，开分支会影响其他工作成员。切换分支会把代码下载下来，特别慢。<br>而Git，只要我不合并及提交到主要版本库，没有一个工作成员会被影响。根据指针切换分支。</p>
+<h3 id="SVN使用方法"><a href="#SVN使用方法" class="headerlink" title="SVN使用方法"></a>SVN使用方法</h3><p>1.迁出配置库内容：右键 →SVN Checkout<br>2.提交更新：SVN Commit，使用之前，要先Update一下，来确保是最新的。<br>3.撤销更改：Tortoise SVN -&gt; Revert<br>4.获取历史文件: Tortoise SVN -&gt; Show log显示日志<br>5.补丁：Tortoise SVN-&gt; Create patch</p>
+<h3 id="git基本操作"><a href="#git基本操作" class="headerlink" title="git基本操作"></a>git基本操作</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">git --version  查看版本号</span><br><span class="line">配置变量(git需要知道项目是谁写的)</span><br><span class="line">git config --global user.name + yourname</span><br><span class="line">git config --global user.email  + youremail</span><br><span class="line">git init 初始化，.git管理文件夹</span><br><span class="line">git add index.html   把本地文件添加到缓存区</span><br><span class="line">git add .  把所有修改的文件都提交到缓存区</span><br><span class="line">git commit -m <span class="string">"修复了一些bug"</span>  推到仓库，说明版本都做什么了</span><br><span class="line"></span><br><span class="line">git status 返回状态信息，查看git仓库当前的状态(会显示哪些文件推入缓存区，哪些还没推到仓库)</span><br><span class="line">git diff 查看文件具体修改了哪里</span><br><span class="line"></span><br><span class="line">git reset --hard HEAD^ 回退到上一次commit的时候(HEAD^回退一个版本，HEAD^^回退两个版本，HEAD~100回退100个版本)</span><br><span class="line">git reset --hard 123456 版本前进 只能根据id进行前进(写出前六位即可)</span><br><span class="line">git <span class="built_in">log</span> 看日志，查看最近到最远提交到仓库的文件信息（一串数字为特有的时间序列id，可以根据他进行版本前后回滚）</span><br><span class="line">git reflog 查看每次操作仓库的信息(commit)</span><br></pre></td></tr></table></figure>
+<h3 id="分支基本操作"><a href="#分支基本操作" class="headerlink" title="分支基本操作"></a>分支基本操作</h3><p>git branch dev  创建dev分支<br>git branch   看所有的分支，当前分支为绿色的<br>git branch -d dev  删除分支（-D强制删除）<br>git checkout dev  切换到dev分支上进行开发<br>git merge dev 合并分支（合并时应该在master分支上）</p>
+<p>如果在开发过程中发现主分支上有bug，但正在开发的dev分支没开发完，切记不要在master上直接开发，保存dev工作现场回到master上创建解决bug的分支如issue分支解决完回到master分支把issue分支合并在回到dev恢复现场<br>git stash 保存工作现场<br>git pop 恢复工作现场</p>
+<h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>1.工作区：工作代码<br>2.缓存区：.git文件夹下 是看不到的 绝的写的有问题可以从缓存区拿出来<br>3.仓库：代码如果没问题，执行git commit就可以一次性把暂存区的所有修改提交到分支推成一个真实的git版本。<br>git是一个快照，每次提交后都会记录一下这次操作的相关信息，根据id号回退和前进。还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。</p>
+<h3 id="推到github"><a href="#推到github" class="headerlink" title="推到github"></a>推到github</h3><p>1.在github上创建一个项目New repository<br>2.生成秘钥，每一个笔记本生成唯一的密钥（ssh可以不用密码）：settings-&gt;SSH and GPG keys -&gt; generating SSH keys -&gt; Generating a new SSH key and adding it to the ssh-agent -&gt; 根据命令找到本地用户下的.shh文件.pub后缀的公钥(公钥进行加密，本地电脑中的密钥进行解密)，拖到VSCode中复制 -&gt; new ssh key中粘贴<br>3.建立起桌面与github仓库的联系<br>git init<br>git add .<br>git commit -m “message”<br>git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:jerry996/ofo.git    本地仓库与远程建立连接<br>git push -u origin master  推到远程master仓库上<br>3.再次推代码<br>git pull origin master（先拉最新的代码）<br>git push origin master:dev（将新更改的代码推到dev分支上）</p>
+<h3 id="克隆项目"><a href="#克隆项目" class="headerlink" title="克隆项目"></a>克隆项目</h3><p>1.新建文件夹git init<br>2.git clone url</p>
+<h3 id="借助服务器跑代码"><a href="#借助服务器跑代码" class="headerlink" title="借助服务器跑代码"></a>借助服务器跑代码</h3><p>进入项目 -&gt; settings -&gt; options -&gt; GithubPages -&gt; source源码部分选择master分支 -&gt; Your site is ready to be published at + url -&gt; 就可通过此网址查看网了</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">工具</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/30/git命令/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -171,6 +253,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">工具</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -288,6 +381,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
