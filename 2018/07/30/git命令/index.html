@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>git命令 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="svn与git区别： 1.Git分布式：123每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网； 2.中央版本库：SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问">
+  <meta name="description" content="svn与git区别： 1.Git分布式：每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网； 2.中央版本库：SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问题时，">
 <meta name="keywords" content="工具">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git命令">
 <meta property="og:url" content="http://yoursite.com/2018/07/30/git命令/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="svn与git区别： 1.Git分布式：123每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网； 2.中央版本库：SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问">
+<meta property="og:description" content="svn与git区别： 1.Git分布式：每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网； 2.中央版本库：SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问题时，">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-30T13:10:18.569Z">
+<meta property="og:updated_time" content="2018-07-31T01:25:35.593Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git命令">
-<meta name="twitter:description" content="svn与git区别： 1.Git分布式：123每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网； 2.中央版本库：SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问">
+<meta name="twitter:description" content="svn与git区别： 1.Git分布式：每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网； 2.中央版本库：SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问题时，">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -162,7 +162,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="svn与git区别："><a href="#svn与git区别：" class="headerlink" title="svn与git区别："></a>svn与git区别：</h3><ul>
-<li>1.Git分布式：123<br>每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网；</li>
+<li>1.Git分布式：<br>每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网；</li>
 <li>2.中央版本库：<br>SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问题时，所有工作成员都一起瘫痪。SVN在Commit前，我们都建议是先Update一下，跟本地的代码编译没问题，并确保开发的功能正常后再提交。当你提交你的完成品时，它将直接记录到中央版本库。当你发现你的完成品存在严重问题时，你已经无法阻止事情的发生了。如果网路中断，你根本没办法提交！<br>每一个Git都是一个版本库。主要版本库发生了什麼事，工作成员仍然可以在自己的本地版本库提交，等待主要版本库恢复即可。工作成员也可以提交到其他的版本库。而git的提交完全属於本地版本库的活动。而你只需“推”（git push）到主要版本库即可。Git的“推”其实是在执行“同步”（Sync）。</li>
 <li>3.分支：<br>在SVN，开分支会影响其他工作成员。切换分支会把代码下载下来，特别慢。<br>而Git，只要我不合并及提交到主要版本库，没有一个工作成员会被影响。根据指针切换分支。</li>
 </ul>
@@ -419,7 +419,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">HTTP协议</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">DOM</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -427,7 +431,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+                <a href="javascript:void(0)" class="js-tag color2">HTTP协议</a>
               </li>
              
               <li class="article-tag-list-item">

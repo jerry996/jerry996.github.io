@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>CSS | Hexo</title>
+  <title>事件 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.选择器 1.简单选择器1.id选择器      #only    身份证2.class选择器    .demo    衣服3.属性选择器    [id] {} 或  [id=”only”]{}如果希望选择有某个属性的元素，而不论属性值是什么，可以使用简单属性选择器[class]{background: red;}4.伪类选择器伪类选择器 一般是指 用来显示特殊效果（比如鼠标响应等）的选择器a:">
-<meta name="keywords" content="CSS">
+  <meta name="description" content="绑定事件处理函数 1.ele.onxxx = function (event) {}div.onclick(function (){})兼容性很好，但是一个元素只能绑定一个处理程序（后一个覆盖前一个）基本等同于写在HTML行间上 2.obj.addEventListener(type事件类型, fn处理函数, false);div.addEventListener(‘click’, functio">
+<meta name="keywords" content="DOM">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS">
-<meta property="og:url" content="http://yoursite.com/2018/07/30/CSS/index.html">
+<meta property="og:title" content="事件">
+<meta property="og:url" content="http://yoursite.com/2018/07/31/事件/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.选择器 1.简单选择器1.id选择器      #only    身份证2.class选择器    .demo    衣服3.属性选择器    [id] {} 或  [id=”only”]{}如果希望选择有某个属性的元素，而不论属性值是什么，可以使用简单属性选择器[class]{background: red;}4.伪类选择器伪类选择器 一般是指 用来显示特殊效果（比如鼠标响应等）的选择器a:">
+<meta property="og:description" content="绑定事件处理函数 1.ele.onxxx = function (event) {}div.onclick(function (){})兼容性很好，但是一个元素只能绑定一个处理程序（后一个覆盖前一个）基本等同于写在HTML行间上 2.obj.addEventListener(type事件类型, fn处理函数, false);div.addEventListener(‘click’, functio">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-30T13:30:29.593Z">
+<meta property="og:updated_time" content="2018-07-31T01:36:01.819Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS">
-<meta name="twitter:description" content="1.选择器 1.简单选择器1.id选择器      #only    身份证2.class选择器    .demo    衣服3.属性选择器    [id] {} 或  [id=”only”]{}如果希望选择有某个属性的元素，而不论属性值是什么，可以使用简单属性选择器[class]{background: red;}4.伪类选择器伪类选择器 一般是指 用来显示特殊效果（比如鼠标响应等）的选择器a:">
+<meta name="twitter:title" content="事件">
+<meta name="twitter:description" content="绑定事件处理函数 1.ele.onxxx = function (event) {}div.onclick(function (){})兼容性很好，但是一个元素只能绑定一个处理程序（后一个覆盖前一个）基本等同于写在HTML行间上 2.obj.addEventListener(type事件类型, fn处理函数, false);div.addEventListener(‘click’, functio">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -141,81 +141,75 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-CSS" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-事件" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      CSS
+      事件
     </h1>
   
 
         
-        <a href="/2018/07/30/CSS/" class="archive-article-date">
-  	<time datetime="2018-07-30T13:18:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+        <a href="/2018/07/31/事件/" class="archive-article-date">
+  	<time datetime="2018-07-31T01:32:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-选择器"><a href="#1-选择器" class="headerlink" title="1.选择器"></a>1.选择器</h3><ul>
-<li><p>1.简单选择器<br>1.id选择器      #only    身份证<br>2.class选择器    .demo    衣服<br>3.属性选择器    [id] {} 或  [id=”only”]{}<br>如果希望选择有某个属性的元素，而不论属性值是什么，可以使用简单属性选择器<br>[class]{background: red;}<br>4.伪类选择器<br>伪类选择器 一般是指 用来显示特殊效果（比如鼠标响应等）的选择器<br>a: hover{background: red;}<br>5.标签选择器<br>6.通配符选择器 *</p>
-</li>
-<li><p>2.复杂选择器<br>1.父子选择器<br>div span{~}<br>2.直接子元素选择器<br>div &gt; em{~}<br>3.并列选择器（不加空格）<br>div.demo{~}<br>4.分组选择器（简化代码）<br>em, strong, span{~} </p>
+        <h3 id="绑定事件处理函数"><a href="#绑定事件处理函数" class="headerlink" title="绑定事件处理函数"></a>绑定事件处理函数</h3><ul>
+<li>1.ele.onxxx = function (event) {}<br>div.onclick(function (){})<br>兼容性很好，但是一个元素只能绑定一个处理程序（后一个覆盖前一个）<br>基本等同于写在HTML行间上</li>
+<li>2.obj.addEventListener(type事件类型, fn处理函数, false);<br>div.addEventListener(‘click’, function (){<br>console.log(‘a’’);<br>}, false);<br>div.addEventListener(‘click’, test, false);<br>IE9以下不兼容，一个事件可以绑定多个处理程序<br>绑定事件出现在循环里就要考虑是否出现闭包</li>
+<li>3.obj.attachEvent(’on‘ + type, fn);<br>IE独有，一个事件同样可以绑定多个处理程序<br>div.attachEvent(‘onclick’, function(){})</li>
+</ul>
+<h3 id="事件处理程序的运行环境"><a href="#事件处理程序的运行环境" class="headerlink" title="事件处理程序的运行环境"></a>事件处理程序的运行环境</h3><ul>
+<li>1.ele.onxxx = function (event) {}<br>程序this指向是dom元素本身</li>
+<li>2.obj.addEventListener(type, fn, false);<br>程序this指向是dom元素本身</li>
+<li>3.obj.attachEvent(‘on’+ type, fn);<br>程序this指向window，若想改变this指向：<br>div.attachEvent(‘onclick’, function () {<br>  handle.call(div)<br>});<br>function handle(){<br>  //事件处理程序<br>}<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">封装兼容性的 addEvent(elem, type, handle);方法</span><br><span class="line">function addEvent(ele, type, handle) &#123;</span><br><span class="line">	if(ele.addEventListener)&#123;</span><br><span class="line">		ele.addEventListener(type, handle, false);</span><br><span class="line">	&#125;else if(ele.attachEvent) &#123;</span><br><span class="line">		ele.attachEvent(&apos;on&apos; + type, function () &#123;</span><br><span class="line">			handle.call(ele)</span><br><span class="line">		&#125;)</span><br><span class="line">	&#125;else&#123;</span><br><span class="line">		ele[&apos;on&apos; + type] = handle;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="2-css权重（256进制）"><a href="#2-css权重（256进制）" class="headerlink" title="2.css权重（256进制）"></a>2.css权重（256进制）</h3><p>！important                Infinity（无限）<br>行间样式                    1000<br>id                        100<br>class / 属性选择器 / 伪类        10<br>标签 / 伪元素                1<br>通配符                    0<br>！important &gt; 行间样式 身上 &gt; id &gt; class / 属性选择器 &gt; div &gt; *<br>（优先级相同，后面会覆盖前面）</p>
-<h3 id="3-长度单位"><a href="#3-长度单位" class="headerlink" title="3.长度单位"></a>3.长度单位</h3><p>有两种类型的长度单位：相对和绝对。如果数字是0则可以省略单位。</p>
+<h3 id="解除事件处理程序"><a href="#解除事件处理程序" class="headerlink" title="解除事件处理程序"></a>解除事件处理程序</h3><p>ele.onclick = false/“”/null;<br>ele.removeEventListener(type, fn, false);<br>ele.detachEvent(‘on’+ type, fn);<br>注:若绑定匿名函数，则无法解除</p>
+<h3 id="事件处理模型-：事件冒泡、捕获"><a href="#事件处理模型-：事件冒泡、捕获" class="headerlink" title="事件处理模型 ：事件冒泡、捕获"></a>事件处理模型 ：事件冒泡、捕获</h3><p>dom事件流同时支持两种事件模型，addEventListener第三个参数用来设置事件在捕获(true)阶段执行还是冒泡(false)阶段执行。捕获顺序为先捕获后冒泡，两种事件流都会触及dom中所有的对象，从documment开始到document对象结束</p>
 <ul>
-<li>1.绝对长度：<br>是一个固定的值，它反映一个真实的物理尺寸，不依赖于环境（显示器、分辨率、操作系统等）<br>cm、mm、px、pt、pc</li>
-<li>2.相对长度：<br>指定了一个长度相对于另一个长度的属性，对于不同设备相对长度更适用。<br>em、rem、ex、ch、vm、vh<br>em：一般浏览器默认字体大小是16px，1em=16px。如果你在body上设置一个字体大小，那么在body内任何子元素的em值都等于这个字体大小。<br>rem：相对于根元素(html)的font-size属性计算值<br>ex：取当前作用效果字体的小写x高度，无法确定就取em的一半作为ex<br>ch：节点字体所使用的0的宽度，无法确定0的宽度就取em的一半作为ex<br>vm：视窗宽度，1vm=视窗宽度的1%<br>vh：视窗高度，1vh=视窗高度的1%</li>
+<li>1.事件冒泡：<br>子元素事件触发，事件沿着包含关系往上级传递，每一级都可以感知到事件。用event.stopPropagation();终止事件的广播分发，这样事件停留在本节点，不会向外传播。如果给整个document定义了一个点击事件，那么任何元素上的点击事件都会冒泡到document从而触发这个方法。除非之前有一个时间处理函数内部明确终止冒泡，那他就不会一路网上知道document。<br>事件冒泡作用：用户鼠标范围特别大，而程序没有跟上，鼠标就不位于那一层之上了。如：onmousemove，此时把事件触发注册在document级别可以让他们及时触发</li>
+<li>2.事件捕获：<br>结构上（非视觉上）嵌套关系的元素，会存在事件捕获的功能，即同一事件，自父元素捕获至子元素（事件源元素自执行）。（自上向底）addEventListener第三个参数为true<br>IE没有捕获事件 </li>
+<li>3.触发顺序：先捕获，后冒泡。自执行时谁先绑定谁先执行</li>
+<li>4.focus，blur，change，submit，reset，select 等事件不冒泡</li>
 </ul>
-<h3 id="4-字体颜色设置（16进制）"><a href="#4-字体颜色设置（16进制）" class="headerlink" title="4.字体颜色设置（16进制）"></a>4.字体颜色设置（16进制）</h3><ul>
-<li>1.纯英文单词<br>red，green，blue</li>
-<li>2.颜色代码<br>r        g        b<br>00~ff    00~ff    00~ff  颜色的饱和程度<br>  #000000（#000可简写）黑<br>  (# f f f) 白</li>
-<li>3.颜色函数<br>rgb(  ,  ,  )数字0~255<br>rgb(0,0,0)黑色<br>rgb(255,255,255)白色</li>
-</ul>
-<h3 id="5-display"><a href="#5-display" class="headerlink" title="5.display"></a>5.display</h3><ul>
-<li>1.块级元素（block）：div，p，ul li，ol li，form，address<br>feature：总是在新行开始，占据一整行<br>宽度始终与浏览器宽度一样与内容无关<br>可以通过css改变宽高</li>
-<li>2.行级元素（inline）：span，strong，em，a，del<br>feature：与其他元素在一行上<br>内容决定宽度<br>不可以通过css改变宽高</li>
-<li>3.行级块元素（inline-block）：img，<br>feature：内容决定大小<br>可以改变宽高<br>常见的行级元素和块级元素<br>行级元素:span a em strong del<br>块级元素:div p address ulli olli form</li>
-</ul>
-<h3 id="6-定位"><a href="#6-定位" class="headerlink" title="6.定位"></a>6.定位</h3><ul>
-<li>1.relative相对定位：<br>1）保留原来的位置进行定位<br>2）相对于自己原来的位置进行定位<br>3）移动后，会导致它覆盖其他框</li>
-<li>2.absolute绝对定位：<br>1）脱离原来位置进行定位<br>2）相对于最近的有定位的祖先元素进行定位，没有则相对于文档进行定位<br>3）可以通过设置z-index控制堆放次序</li>
-<li>3.fixed固定定位：<br>固定定位（广告定位）<br>一般：一般用relative做参照物，absolute进行定位，以减小对后续元素的破坏（absolute会对后面元素有影响）relative当做支架，absolute当做定位技术。<br>position属性的合法值有：static、fixed、relative、absolute。static时position属性的默认值。</li>
-</ul>
-<h3 id="7-float"><a href="#7-float" class="headerlink" title="7.float"></a>7.float</h3><ul>
-<li><p>1.一开始解决报纸排版问题。文字环绕图片（报纸布局）文字用p标签包住，图片设置浮动，产生浮动流。<br>当一个元素浮动了之后，那么<br>1.浮动元素才能看到浮动元素<br>2.文本类元素（有inline / inline-block 属性的元素或者文本）<br>3.bfc元素<br>其他元素都看不到他（即可以到他的位置上）</p>
+<h3 id="取消冒泡和阻止默认事件"><a href="#取消冒泡和阻止默认事件" class="headerlink" title="取消冒泡和阻止默认事件"></a>取消冒泡和阻止默认事件</h3><ul>
+<li><p>1.取消冒泡：<br>关闭冒泡可节省系统资源<br>W3C标准 event.stopPropagation();但不支持ie9以下版本<br>IE独有 event.cancelBubble = true;<br>封装取消冒泡的函数 stopBubble(event)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function stopBubble(event) &#123;</span><br><span class="line">	if(event.stopPropagation) &#123;</span><br><span class="line">		event.stopPropagation()</span><br><span class="line">	&#125;else&#123;</span><br><span class="line">		event.cancelBubble = true</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>2.清除浮动流<br>子元素都浮动之后，父元素包不住子元素，清除浮动流用 clear：left/right/both/none，只在块元素block上生效。变成块级display:block伪元素的属性clear才好使，外面的wrapper才可以清除标签内的浮动流。<br>.father::after{<br>content:””;<br>display:block;<br>clear: both;<br>}</p>
+<li><p>2.阻止默认事件:<br>默认事件input表单提交，a标签跳转，右键菜单等<br>1.return false;  以对象点属性的方式注册的事件才生效(句柄的方式才好使addEventListener不好使)<br>2.event.preventDefault(); W3C标注，IE9以下不兼容<br>3.event.returnValue = false; 兼容IE<br>封装阻止默认事件的函数 cancelHandler(event);</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function cancelHandler(event) &#123;</span><br><span class="line">	if(event.preventDefault) &#123;</span><br><span class="line">		event.preventDefault</span><br><span class="line">	&#125;else&#123;</span><br><span class="line">		event.returnValue = false</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>3.函数内return false<br>作用：1）禁止向上冒泡<br>2）阻止默认事件<br>3）停止回调函数执行并立即返回</p>
 </li>
 </ul>
-<h3 id="8-关于margin的两个bug（水平方向无bug，两个bug都是垂直方向）"><a href="#8-关于margin的两个bug（水平方向无bug，两个bug都是垂直方向）" class="headerlink" title="8.关于margin的两个bug（水平方向无bug，两个bug都是垂直方向）"></a>8.关于margin的两个bug（水平方向无bug，两个bug都是垂直方向）</h3><ul>
-<li>1.margin塌陷 （一个元素套着另一个元素，都设置了垂直方向的margin，那么就以大的为准）<br>方法一：在父元素身上加个顶border-top(土法子)<br>方法二：bfc     块级 格式化 上下文 block format contexting每个盒子都是一个独立的渲染单元，渲染规则是一样的，设置bfc语法可以改变盒子的渲染规则(解决父子级margin垂直方向的bug的四个语法)让父级元素触发bfc：float:left/right;浮动元素<br>position:absolute;绝对定位元素<br>overflow:hidden;<br>  display:inline-block;</li>
-<li>2.margin合并问题（左右不共用，上下共用）<br>触发概率大（纵向）（不用bfc，多一个功能鸡肋，直接设置上下，可能会触发其他的问题</li>
+<h3 id="事件对象"><a href="#事件对象" class="headerlink" title="事件对象"></a>事件对象</h3><ul>
+<li>1.事件对象  event || window.event 用于IE</li>
+<li>2.事件源对象:（点击的是谁）<br>event.target   火狐独有的<br>event.srcElement  IE独有的<br>这俩chrome都有</li>
+<li>3.兼容性写法<br>wrapper.onclick = function () {<br>var event = e || window.event;<br>var targrt = event.target || event.srcElement;<br>}</li>
 </ul>
-<h3 id="9-bfc语法"><a href="#9-bfc语法" class="headerlink" title="9.bfc语法"></a>9.bfc语法</h3><p>设置bfc语法可以改变盒子的渲染规则，如果一个元素符合了成为BFC的条件，该元素内部元素的布局和定位就和外部元素互不影响(除非内部的盒子建立了新的 BFC)，是一个隔离了的独立容器</p>
-<ul>
-<li>1.形成 BFC 的条件<br>1、浮动元素，float：left/right；<br>2、绝对定位元素，position：absolute；<br>3、display：block；<br>4、overflow：hidden </li>
-<li>2.BFC常见作用<br>1、包含浮动元素，用bfc来清除浮动流<br>问题案例：高度塌陷问题：在通常情况下父元素的高度会被子元素撑开，而在这里因为其子元素为浮动元素所以父元素发生了高度坍塌，上下边界重合。这时就可以用bfc来清除浮动了。<br>2、不被浮动元素覆盖 ，触发bfc来解决遮挡问题。<br>问题案例： div浮动兄弟遮盖问题：由于左侧块级元素发生了浮动，所以和右侧未发生浮动的块级元素不在同一层内，所以会发生div遮挡问题。可以给被覆盖的右侧块加 overflow: hidden，触发bfc来解决遮挡问题。 右侧块排列在左侧快右面。<br>3、 BFC 会阻止外边距折叠 ，解决margin的塌陷现象<br>问题案例：margin塌陷问题：在标准文档流中，块级标签之间竖直方向的margin会以大的为准，这就是margin的塌陷现象。可以用overflow：hidden产生bfc来解决。 </li>
+<h3 id="事件委托机制"><a href="#事件委托机制" class="headerlink" title="事件委托机制"></a>事件委托机制</h3><p>利用事件冒泡，和事件源对象进行处理，这种方式叫做事件委托。<br>优点：</p>
+<ol>
+<li>性能 不需要循环所有的元素一个个绑定事件</li>
+<li>灵活 当有新的子元素时不需要重新绑定事件<br>动态添加事件：点击li冒泡给ul(点击事件绑定到li上，麻烦效率低还不能扩充)不用循环，效率高，还可以扩充。是子元素就可以冒泡到父元素上。前需要监控1000个子元素，现在只需要监控一个就可以</li>
+</ol>
+<h3 id="事件分类"><a href="#事件分类" class="headerlink" title="事件分类"></a>事件分类</h3><ul>
+<li>1.鼠标事件<br>click、mousedown、mouseup、mousemove（鼠标移动事件）、contextmenu（右键菜单栏）、mouseover mouseout、 mouseenter mouseleave（鼠标移入、移出）</li>
+<li>2.用button来区分鼠标的按键，0/1/2左中右，可以用switch判断是哪个键</li>
+<li>3.DOM3标准规定:click事件只能监听左键，只能通过mousedown 和 mouseup来判断鼠标键<br>如何解决mousedown和click的冲突</li>
 </ul>
-<h3 id="10-伪元素（IE8开始有）：天生存在于任何一个标签内"><a href="#10-伪元素（IE8开始有）：天生存在于任何一个标签内" class="headerlink" title="10.伪元素（IE8开始有）：天生存在于任何一个标签内"></a>10.伪元素（IE8开始有）：天生存在于任何一个标签内</h3><ul>
-<li>1.before任何一个逻辑之前，after任何一个逻辑之后，在content内加内容就可以从标签内看到。<br>(before)<br>handsome<br>(after)<br>span::before/after{content:” “}  写伪元素必须写content</li>
-<li>2.伪元素天生的display是inline</li>
+<h3 id="事件分类-1"><a href="#事件分类-1" class="headerlink" title="事件分类"></a>事件分类</h3><ul>
+<li>1.键盘事件<br>onkeypress事件处理函数是专门用来处理键盘事件的。按下键盘上任何一个按钮都会触发onkeydown。<br>keydown &gt; keypress &gt; keyup<br>keydown和keypress的区别<br>keydown 可以响应任意键盘按键，keypress只可以相应字符类键盘按键（数字和字母）<br>keypress返回ASCII码，charCode可以转换成相应字符，可以检测任何字符按键<br>down  press  up  字符按键 123 ABC<br>down  up  Ctrl 按键<br>tab键只触发down<br>String.fromCharCode(e.charCode)将ASC码转换成字符<br>keypress,keydown,keyup的区别:<br>1.keydown：键盘按下就触发<br>2.keypress：按数字和字母会触发, 返回ASCII码。<br>3.keyup：松开按键时触发, 与keydown相对, 返回键盘代码</li>
+<li>2.文本操作事件<br>input文本框输入触发<br>focus,blur<br>change聚焦失焦有改变就触发<br>顺序：focus  down  press  input  up  change  blur<br>input.oninput = functio n(e){<br>console.log(this.value)<br>}</li>
+<li>3.窗体操作类(window上的事件)<br>scroll<br>load  慢、没意义</li>
 </ul>
-<h3 id="11-规定"><a href="#11-规定" class="headerlink" title="11.规定"></a>11.规定</h3><ul>
-<li>1.标签规定<br>a标签不能再嵌套a标签<br>行级元素能套行级元素<br>块级元素能套行级元素和块级元素<br>行及元素不能套块级元素，但是div里嵌套p是不可以的（例外）</li>
-<li>2.文字溢出打点<br>text-overflow：ellipsis;    文本溢出要展示的样式（ellipse椭圆，椭圆的复数们就是…）<br>white-space: nowrap;    文本的排列形式，nowrap是永远不换行<br>多行文字溢出打点，只能手写<br>（多行打点的兼容性不好，移动端好使（css3），但是pc端（电脑端）兼容性不好）</li>
-<li>3.注意<br>伪元素天生的display是inline<br>clear只在块元素block上生效<br>position：absolute；和float：left/right；都会把元素隐式的变成block</li>
-<li>4.font-size:20px;    设置的是字体的高</li>
-<li>5.编写CSS让一个已知宽高的div，在PC/手机端水平垂直居中。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">position: relative;</span><br><span class="line">   margin: 0 auto;</span><br><span class="line"></span><br><span class="line">position: relative;</span><br><span class="line">   top: 50%;</span><br><span class="line">   left: 50%;</span><br><span class="line">   margin-top: -50px;</span><br><span class="line">   margin-left: -50px;</span><br><span class="line"></span><br><span class="line">position: relative;</span><br><span class="line">   top: 50%;</span><br><span class="line">   left: 50%;</span><br><span class="line">   transform: translate(-50%, -50%)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="用css画出一个三角形"><a href="#用css画出一个三角形" class="headerlink" title="用css画出一个三角形"></a>用css画出一个三角形</h3><p>利用border（border-style：solid / dotted条状虚线）</p>
 
       
 
@@ -255,7 +249,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DOM</a>
         		</li>
       		
 		</ul>
@@ -311,7 +305,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/30/CSS/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/31/事件/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -325,18 +319,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/07/30/TCP-IP/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/07/31/异步加载/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          TCP/IP
+          异步加载
         
       </div>
     </a>
   
   
-    <a href="/2018/07/30/HTML/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">HTML</div>
+    <a href="/2018/07/31/数组以及常用方法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">数组以及常用方法</div>
       <i class="icon-circle-right"></i>
     </a>
   

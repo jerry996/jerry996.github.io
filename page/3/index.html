@@ -6,20 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>CSS | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.选择器 1.简单选择器1.id选择器      #only    身份证2.class选择器    .demo    衣服3.属性选择器    [id] {} 或  [id=”only”]{}如果希望选择有某个属性的元素，而不论属性值是什么，可以使用简单属性选择器[class]{background: red;}4.伪类选择器伪类选择器 一般是指 用来显示特殊效果（比如鼠标响应等）的选择器a:">
-<meta name="keywords" content="CSS">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CSS">
-<meta property="og:url" content="http://yoursite.com/2018/07/30/CSS/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.选择器 1.简单选择器1.id选择器      #only    身份证2.class选择器    .demo    衣服3.属性选择器    [id] {} 或  [id=”only”]{}如果希望选择有某个属性的元素，而不论属性值是什么，可以使用简单属性选择器[class]{background: red;}4.伪类选择器伪类选择器 一般是指 用来显示特殊效果（比如鼠标响应等）的选择器a:">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-30T13:30:29.593Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS">
-<meta name="twitter:description" content="1.选择器 1.简单选择器1.id选择器      #only    身份证2.class选择器    .demo    衣服3.属性选择器    [id] {} 或  [id=”only”]{}如果希望选择有某个属性的元素，而不论属性值是什么，可以使用简单属性选择器[class]{background: red;}4.伪类选择器伪类选择器 一般是指 用来显示特殊效果（比如鼠标响应等）的选择器a:">
+<meta name="twitter:title" content="Hexo">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -141,14 +136,106 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-CSS" class="article article-type-post " itemscope itemprop="blogPost">
+            
+  
+    <article id="post-TCP-IP" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      CSS
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/TCP-IP/">TCP/IP</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/30/TCP-IP/" class="archive-article-date">
+  	<time datetime="2018-07-30T13:31:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="使用HTTP访问Web"><a href="#使用HTTP访问Web" class="headerlink" title="使用HTTP访问Web"></a>使用HTTP访问Web</h3><ul>
+<li>浏览器根据 Web地址栏中指定的URL访问地址，使用HTTP协议的通信，从服务器获取资源从而显示出Web页面。Web使用一种名为HTTP的协议作为规范，完成从客户端到服务器等一系列运作流程。而协议是指规则的约定，可以说Web是建立在HTTP协议上通信的。</li>
+<li>三项WWW构建技术：HTML+HTTP+URL。借助多文档间互相关联形成的超文本，连成可互相参阅的WWW。</li>
+</ul>
+<h3 id="网络基础TCP-IP"><a href="#网络基础TCP-IP" class="headerlink" title="网络基础TCP/IP"></a>网络基础TCP/IP</h3><ul>
+<li>1.TCP/IP协议<br>HTTP 协议 是 TCP / IP 协议 的子集。<br>通常使用的网络（包括互联网）是在TCP/IP协议的基础上运作的，HTTP属于它内部的一个子集。计算机与网络设备要互相通信，双方就必须基于相同的规则，我们把这种规则称为协议。TCP/IP是互联网相关各协议的总称，像这样把互联网相关的协议集合起来总称为TCP/IP<br>TCP：TCP为了更容易传送大数据，把数据分割成报文段。而且TCP能够确认数据最终是否送达给对方。为了准确无误的将数据送达目标处，TCP采用三次握手策略。<br>IP：与IP地址不同，IP是一种协议名称。IP协议的作用是把各种数据包传送给对方。<br>DNS：提供通过域名查找IP地址，或从IP地址反查域名的服务。</li>
+<li>2.TCP/IP分层管理<br>应用层、传输层、网络层、数据链路层。<br>TCP/IP层次化之后，只需把变动的层替换掉即可，每个层次内部的设计就能够自由改动了。<br>1.应用层：通信活动。如：FTP、DNS、HTTP。<br>2.传输层：两台计算机之间的数据传输。如：TCP、UDP（非链接）。<br>3.网络层：选择一条传输路线。如：IP<br>4.数据链路层：处理链接网络的硬件部分。</li>
+<li>3.TCP/IP通信传输流<br>1.在应用层发出请求Web页面的HTTP请求（HTTP协议）<br>2.为了传输方便，在传输层（TCP协议）把从应用层收到的数据（HTTP请求报文）进行分割，并在各个报文上打上标记序号以及端口号后转发给网络层<br>3.在网络层（IP协议）增加通信目的地的地址后转发给链路层<br>4.发送端 在层与层之间传输数据，每经过一层打上一个该层所属的首部信息。反之接收端 在层与层传输数据时，每经过一层会把相应的首部消去。</li>
+</ul>
+<h3 id="三次握手-amp-四次挥手"><a href="#三次握手-amp-四次挥手" class="headerlink" title="三次握手 &amp; 四次挥手"></a>三次握手 &amp; 四次挥手</h3><ul>
+<li>1.三次握手：客户端与服务器建立连接<br>1.客户端发送 SYN 数据包给服务器<br>2.服务器回传一个 SYN / ACK 数据包<br>3.客户端回传一个 ACK 数据包</li>
+<li>2.四次挥手：客户端与服务器断开连接<br>1.客户端发送 FIN 数据包给服务器<br>2.服务器返回 ACK 报文<br>3.服务器与客户端断开连接, 发送 FIN 报文<br>4.客户端返回一个 ACK 报文, 挥手结束</li>
+</ul>
+<h3 id="在浏览器里输入一个url发生了什么"><a href="#在浏览器里输入一个url发生了什么" class="headerlink" title="在浏览器里输入一个url发生了什么"></a>在浏览器里输入一个url发生了什么</h3><p>1.浏览器通过DNS把域名解析成ip地址<br>2.客户端通过TCP三次握手连接到服务器<br>3.客户端向服务端发送HTTP请求服务器里面的资源文档<br>4.服务器向客户端返回HTTP响应<br>5.客户端和服务器断开四次挥手，客户端开始解释处理HTML文档</p>
+<h3 id="URI-amp-URL"><a href="#URI-amp-URL" class="headerlink" title="URI &amp; URL"></a>URI &amp; URL</h3><p>URI：统一资源标识符。用字符串标识某一互联网资源。<br>URL：统一资源定位符。表示资源的地点，可见URL 为 URI 的子集。</p>
+<h3 id="DNS-amp-CDN"><a href="#DNS-amp-CDN" class="headerlink" title="DNS&amp;CDN"></a>DNS&amp;CDN</h3><p>DNS：域名和IP地址相互映射的一个分布式数据库<br>CDN：内容分发网络。其目的是使用户可就近取得所需内容，解决 Internet网络拥挤的状况，提高用    户访问网站的响应速度。</p>
+<h3 id="HTTP-1-0"><a href="#HTTP-1-0" class="headerlink" title="HTTP/1.0"></a>HTTP/1.0</h3><p>HTTP/1.0虽然是初期标准，但至今仍在服务器端广泛使用<br>HTTP/1.1是目前主流HTTP协议版本<br>HTTP/2.0目标是改善用户在使用Web时的速度体验。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">HTTP协议</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/30/TCP-IP/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-CSS" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/CSS/">CSS</a>
     </h1>
   
 
@@ -220,32 +307,6 @@
       
 
       
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/wei.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
     </div>
     <div class="article-info article-info-index">
       
@@ -264,84 +325,16 @@
       
 
       
-
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/30/CSS/">展开全文 >></a>
+        </p>
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/30/CSS/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2018/07/30/TCP-IP/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          TCP/IP
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2018/07/30/HTML/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">HTML</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -361,14 +354,299 @@
 
 
 
-  
-  
-  
 
   
-
+    <article id="post-HTML" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/HTML/">HTML</a>
+    </h1>
   
 
+        
+        <a href="/2018/07/30/HTML/" class="archive-article-date">
+  	<time datetime="2018-07-30T13:07:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-给浏览器设置字典"><a href="#1-给浏览器设置字典" class="headerlink" title="1.给浏览器设置字典"></a>1.给浏览器设置字典</h3><p>在head中写<meta charset="utf-8">属性写在标签的头标签上<br>charset 编码字符集<br>gb2312 亚裔字符集（识别简体中文，不识别繁体）<br>gbk 包含所有亚裔字符集（识别繁体）<br>unicode 万国码<br>utf-8 最常用的万国码</p>
+<h3 id="2-搜索引擎爬虫"><a href="#2-搜索引擎爬虫" class="headerlink" title="2.搜索引擎爬虫"></a>2.搜索引擎爬虫</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;html lang=&quot;en，zh&quot;&gt;告诉搜索引擎爬虫，我们的网站是关于什么内容的</span><br><span class="line">&lt;meta content=&quot;服装&quot; name=&quot;keywords&quot;&gt; keywords关键字</span><br><span class="line">&lt;meta content=&quot;穿了不想脱&quot; name=&quot;description&quot;&gt; description描述性语言</span><br></pre></td></tr></table></figure>
+<h3 id="3-标签介绍"><a href="#3-标签介绍" class="headerlink" title="3.标签介绍"></a>3.标签介绍</h3><ul>
+<li>1.空格/回车<br>空格和回车都是 ： 文本分隔符<br>空格文本的展示形式：html编码  &amp;nbsp</li>
+<li>2.标签在文本中的展示形式<br>尖角号  (&amp;lt) less than<br>  (&amp;gt) great than</li>
+<li>3.单标签.<br>回车br<br>水平线hr</li>
+</ul>
+<h3 id="4-列表"><a href="#4-列表" class="headerlink" title="4.列表"></a>4.列表</h3><ul>
+<li>1.有序列表   order list<br>type=”A / a / I / i / 1”</li>
+<li>2.无序列表（菜单项导航栏，属性只有type可更改）unorder list<br>type=”disc实心圆  (discircle)/ circle空心圆 / square方块”</li>
+</ul>
+<h3 id="5-图片"><a href="#5-图片" class="headerlink" title="5.图片"></a>5.图片</h3><ul>
+<li>1.网上的资源地址url，在新标签页中打开图片，即为服务器地址</li>
+<li>2.本地的相对路径 ，html 文件与图片在同一文件夹下 123.jpg</li>
+<li>3.本地的绝对路径，地址需要写全 D：/a/b/c/123.jpg<br>D：/a/b/lesson2.html<br>D：/a/b/123.jpg，相对<br>D：/a/b/c/123.jpg，绝对<br>alt  图片占位符：当图片打不开或地址错误时展示文字信息<br>title（图片提示符）鼠标移入有显示</li>
+</ul>
+<h3 id="6-a标签"><a href="#6-a标签" class="headerlink" title="6.a标签"></a>6.a标签</h3><ul>
+<li>1.超链接<br>href，hypertext reference超文本引用，指向的目标地址<br>target=”_blank”在新标签页中打开链接</li>
+<li>2.作为锚点<br>anchor锚，定在某个点上（如，置顶）</li>
+<li>3.打电话，发邮件</li>
+<li>4.协议限定符，无限死循环。<br>应用：a标签可以包裹任何东西</li>
+</ul>
+<h3 id="7-form表单（前端数据发给后端工程师）"><a href="#7-form表单（前端数据发给后端工程师）" class="headerlink" title="7.form表单（前端数据发给后端工程师）"></a>7.form表单（前端数据发给后端工程师）</h3><ul>
+<li>1.method=“get/post”发送数据的方法。<br>get传递数据拼接到uel后面，传递给form表单上设置的action后台文件里，跳转到后台文件的页面。（此方法要通过网络访问）</li>
+<li>2.type=”单选框radio/复选框checkbox/button/password/text/submit/reset”</li>
+<li>3.name=规定表单的名称（有name才能提交成功）(name令单选框为一道题，value数据值)</li>
+<li>4.加默认选中checked</li>
+<li>5.下拉菜单select</li>
+</ul>
+<h3 id="8-主流浏览器及其内核"><a href="#8-主流浏览器及其内核" class="headerlink" title="8.主流浏览器及其内核"></a>8.主流浏览器及其内核</h3><p>Google chrome    Webkit /  blink  (市场份额全球第一)<br>Safari（冲浪）        Webkit<br>IE                trident<br>Firefox            Gecko<br>Opera            presto</p>
+<h3 id="9-数据"><a href="#9-数据" class="headerlink" title="9.数据"></a>9.数据</h3><ul>
+<li><p>1.表格标签<br>table元素包含一个或多个tr、th以及td元素。<br>tr表格行，th表头（加粗），td表格单元。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;table border=&quot;1&quot;&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;th&gt;Month&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;Savings&lt;/th&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;January&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;$100&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.标题标签<br>html dl、dt、dd是一组合标签。dt和dd是放于dl标签内，dt与dd处于同级标签。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt; </span><br><span class="line">    &lt;dt&gt;标题1&lt;/dt&gt; </span><br><span class="line">    &lt;dd&gt;列表1&lt;/dd&gt; </span><br><span class="line">    &lt;dd&gt;列表2&lt;/dd&gt; </span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="10-请使用至少两种方案-实现左中右三栏布局，左栏定宽100px，右栏定宽100px，中栏宽度不固定，三栏宽度加起来正好是100"><a href="#10-请使用至少两种方案-实现左中右三栏布局，左栏定宽100px，右栏定宽100px，中栏宽度不固定，三栏宽度加起来正好是100" class="headerlink" title="10.请使用至少两种方案 实现左中右三栏布局，左栏定宽100px，右栏定宽100px，中栏宽度不固定，三栏宽度加起来正好是100%"></a>10.请使用至少两种方案 实现左中右三栏布局，左栏定宽100px，右栏定宽100px，中栏宽度不固定，三栏宽度加起来正好是100%</h3><ul>
+<li>1.绝对定位方法：用绝对定位固定在窗口两边，中间采用自适应宽度，利用margin属性把两边撑开。缺点：中间有最小宽度的限制，当宽度小到一定值，会发生元素重叠的情况</li>
+<li>2.浮动方法：此方法要让中间内容放在最后面，左列左浮动，右列右浮动，中间利用浮动的跟随性，实现三列自适应布局。缺点：中间内容不能使用clear：both属性</li>
+<li>3.margin负值方法：此方法要让中间内容放在最前面，并且要使用一个容器把其包起来，width设置为100%，随屏幕自适应，然后让外层元素整体浮动，内层为真正的内容。左右两列均采用margin负值定位，左列左浮动，设置margin-left为-100%,右列也左浮动，然后设置margin-left为自身宽度的负值。优点：三列相互关联，受到内部影响不大。缺点：比较难理解，相对其他比较复杂<br>PS：除了第一种绝对定位方法可以不在意左中右三列div的顺序，第二种margin负值和第三种浮动方法都需要注意左中右三列div的顺序，第三种方法需要给中间内容套一层父级div元素。以上就是我学习的三种三列自适应布局的方法。</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/30/HTML/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-git命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/git命令/">git命令</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/30/git命令/" class="archive-article-date">
+  	<time datetime="2018-07-30T12:53:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="svn与git区别："><a href="#svn与git区别：" class="headerlink" title="svn与git区别："></a>svn与git区别：</h3><ul>
+<li>1.Git分布式：<br>每个开发人员从中心版本库/服务器上chect out代码后会在自己的机器上克隆一个自己的版本库。它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。Git下载下来后，在本地不必联网就可以看到所有的log，很方便学习，SVN却需要联网；</li>
+<li>2.中央版本库：<br>SVN只能有一个指定中央版本库。请求另一个版本，本地的版本会被替换(中心化) 。当中央版本库有问题时，所有工作成员都一起瘫痪。SVN在Commit前，我们都建议是先Update一下，跟本地的代码编译没问题，并确保开发的功能正常后再提交。当你提交你的完成品时，它将直接记录到中央版本库。当你发现你的完成品存在严重问题时，你已经无法阻止事情的发生了。如果网路中断，你根本没办法提交！<br>每一个Git都是一个版本库。主要版本库发生了什麼事，工作成员仍然可以在自己的本地版本库提交，等待主要版本库恢复即可。工作成员也可以提交到其他的版本库。而git的提交完全属於本地版本库的活动。而你只需“推”（git push）到主要版本库即可。Git的“推”其实是在执行“同步”（Sync）。</li>
+<li>3.分支：<br>在SVN，开分支会影响其他工作成员。切换分支会把代码下载下来，特别慢。<br>而Git，只要我不合并及提交到主要版本库，没有一个工作成员会被影响。根据指针切换分支。</li>
+</ul>
+<h3 id="SVN使用方法"><a href="#SVN使用方法" class="headerlink" title="SVN使用方法"></a>SVN使用方法</h3><p>1.迁出配置库内容：右键 →SVN Checkout<br>2.提交更新：SVN Commit，使用之前，要先Update一下，来确保是最新的。<br>3.撤销更改：Tortoise SVN -&gt; Revert<br>4.获取历史文件: Tortoise SVN -&gt; Show log显示日志<br>5.补丁：Tortoise SVN-&gt; Create patch</p>
+<h3 id="git基本操作"><a href="#git基本操作" class="headerlink" title="git基本操作"></a>git基本操作</h3><p>git –version  查看版本号<br>配置变量(git需要知道项目是谁写的)<br>git config –global user.name + yourname<br>git config –global user.email  + youremail<br>git init 初始化，.git管理文件夹<br>git add index.html   把本地文件添加到缓存区<br>git add .  把所有修改的文件都提交到缓存区<br>git commit -m “修复了一些bug”  推到仓库，说明版本都做什么了</p>
+<p>git status 返回状态信息，查看git仓库当前的状态(会显示哪些文件推入缓存区，哪些还没推到仓库)<br>git diff 查看文件具体修改了哪里</p>
+<p>git reset –hard HEAD^ 回退到上一次commit的时候(HEAD^回退一个版本，HEAD^^回退两个版本，HEAD~100回退100个版本)<br>git reset –hard 123456 版本前进 只能根据id进行前进(写出前六位即可)<br>git log 看日志，查看最近到最远提交到仓库的文件信息（一串数字为特有的时间序列id，可以根据他进行版本前后回滚）<br>git reflog 查看每次操作仓库的信息(commit)</p>
+<h3 id="分支基本操作"><a href="#分支基本操作" class="headerlink" title="分支基本操作"></a>分支基本操作</h3><p>git branch dev  创建dev分支<br>git branch   看所有的分支，当前分支为绿色的<br>git branch -d dev  删除分支（-D强制删除）<br>git checkout dev  切换到dev分支上进行开发<br>git merge dev 合并分支（合并时应该在master分支上）</p>
+<p>如果在开发过程中发现主分支上有bug，但正在开发的dev分支没开发完，切记不要在master上直接开发，保存dev工作现场回到master上创建解决bug的分支如issue分支解决完回到master分支把issue分支合并在回到dev恢复现场<br>git stash 保存工作现场<br>git pop 恢复工作现场</p>
+<h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>1.工作区：工作代码<br>2.缓存区：.git文件夹下 是看不到的 绝的写的有问题可以从缓存区拿出来<br>3.仓库：代码如果没问题，执行git commit就可以一次性把暂存区的所有修改提交到分支推成一个真实的git版本。<br>git是一个快照，每次提交后都会记录一下这次操作的相关信息，根据id号回退和前进。还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。</p>
+<h3 id="推到github"><a href="#推到github" class="headerlink" title="推到github"></a>推到github</h3><p>1.在github上创建一个项目New repository<br>2.生成秘钥，每一个笔记本生成唯一的密钥（ssh可以不用密码）：settings-&gt;SSH and GPG keys -&gt; generating SSH keys -&gt; Generating a new SSH key and adding it to the ssh-agent -&gt; 根据命令找到本地用户下的.shh文件.pub后缀的公钥(公钥进行加密，本地电脑中的密钥进行解密)，拖到VSCode中复制 -&gt; new ssh key中粘贴<br>3.建立起桌面与github仓库的联系<br>git init<br>git add .<br>git commit -m “message”<br>git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:jerry996/ofo.git    本地仓库与远程建立连接<br>git push -u origin master  推到远程master仓库上<br>3.再次推代码<br>git pull origin master（先拉最新的代码）<br>git push origin master:dev（将新更改的代码推到dev分支上）</p>
+<h3 id="克隆项目"><a href="#克隆项目" class="headerlink" title="克隆项目"></a>克隆项目</h3><p>1.新建文件夹git init<br>2.git clone url</p>
+<h3 id="借助服务器跑代码"><a href="#借助服务器跑代码" class="headerlink" title="借助服务器跑代码"></a>借助服务器跑代码</h3><p>进入项目 -&gt; settings -&gt; options -&gt; GithubPages -&gt; source源码部分选择master分支 -&gt; Your site is ready to be published at + url -&gt; 就可通过此网址查看网站了</p>
+<h3 id="hexo新建一篇文章"><a href="#hexo新建一篇文章" class="headerlink" title="hexo新建一篇文章"></a>hexo新建一篇文章</h3><p>hexo new post name<br>hexo g    生成<br>hexo d    发布<br>hexo server    开启服务器</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">工具</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/30/git命令/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/hello-world/">Hello World</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/30/hello-world/" class="archive-article-date">
+  	<time datetime="2018-07-30T11:26:07.217Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">工具</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/30/hello-world/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+    </nav>
   
 
 
@@ -391,8 +669,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
-		isPost: true,
+		isHome: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

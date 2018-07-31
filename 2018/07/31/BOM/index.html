@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>CSS | Hexo</title>
+  <title>BOM | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.选择器 1.简单选择器1.id选择器      #only    身份证2.class选择器    .demo    衣服3.属性选择器    [id] {} 或  [id=”only”]{}如果希望选择有某个属性的元素，而不论属性值是什么，可以使用简单属性选择器[class]{background: red;}4.伪类选择器伪类选择器 一般是指 用来显示特殊效果（比如鼠标响应等）的选择器a:">
-<meta name="keywords" content="CSS">
+  <meta name="description" content="Browser对象Window 浏览器窗口Navigator 浏览器信息Screen 显示屏信息History 只记录当前窗口访问过的URLLocation 包含当前 URL 信息 1.Window对象方法: 1.打开/关闭新窗口window.open();window.close(); 2.提示消息window.alert(); – 带确认按钮的警告框。window.confirm(); – 带">
+<meta name="keywords" content="DOM">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS">
-<meta property="og:url" content="http://yoursite.com/2018/07/30/CSS/index.html">
+<meta property="og:title" content="BOM">
+<meta property="og:url" content="http://yoursite.com/2018/07/31/BOM/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.选择器 1.简单选择器1.id选择器      #only    身份证2.class选择器    .demo    衣服3.属性选择器    [id] {} 或  [id=”only”]{}如果希望选择有某个属性的元素，而不论属性值是什么，可以使用简单属性选择器[class]{background: red;}4.伪类选择器伪类选择器 一般是指 用来显示特殊效果（比如鼠标响应等）的选择器a:">
+<meta property="og:description" content="Browser对象Window 浏览器窗口Navigator 浏览器信息Screen 显示屏信息History 只记录当前窗口访问过的URLLocation 包含当前 URL 信息 1.Window对象方法: 1.打开/关闭新窗口window.open();window.close(); 2.提示消息window.alert(); – 带确认按钮的警告框。window.confirm(); – 带">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-30T13:30:29.593Z">
+<meta property="og:updated_time" content="2018-07-31T01:41:54.789Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS">
-<meta name="twitter:description" content="1.选择器 1.简单选择器1.id选择器      #only    身份证2.class选择器    .demo    衣服3.属性选择器    [id] {} 或  [id=”only”]{}如果希望选择有某个属性的元素，而不论属性值是什么，可以使用简单属性选择器[class]{background: red;}4.伪类选择器伪类选择器 一般是指 用来显示特殊效果（比如鼠标响应等）的选择器a:">
+<meta name="twitter:title" content="BOM">
+<meta name="twitter:description" content="Browser对象Window 浏览器窗口Navigator 浏览器信息Screen 显示屏信息History 只记录当前窗口访问过的URLLocation 包含当前 URL 信息 1.Window对象方法: 1.打开/关闭新窗口window.open();window.close(); 2.提示消息window.alert(); – 带确认按钮的警告框。window.confirm(); – 带">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -141,81 +141,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-CSS" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-BOM" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      CSS
+      BOM
     </h1>
   
 
         
-        <a href="/2018/07/30/CSS/" class="archive-article-date">
-  	<time datetime="2018-07-30T13:18:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
+        <a href="/2018/07/31/BOM/" class="archive-article-date">
+  	<time datetime="2018-07-31T01:40:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-选择器"><a href="#1-选择器" class="headerlink" title="1.选择器"></a>1.选择器</h3><ul>
-<li><p>1.简单选择器<br>1.id选择器      #only    身份证<br>2.class选择器    .demo    衣服<br>3.属性选择器    [id] {} 或  [id=”only”]{}<br>如果希望选择有某个属性的元素，而不论属性值是什么，可以使用简单属性选择器<br>[class]{background: red;}<br>4.伪类选择器<br>伪类选择器 一般是指 用来显示特殊效果（比如鼠标响应等）的选择器<br>a: hover{background: red;}<br>5.标签选择器<br>6.通配符选择器 *</p>
-</li>
-<li><p>2.复杂选择器<br>1.父子选择器<br>div span{~}<br>2.直接子元素选择器<br>div &gt; em{~}<br>3.并列选择器（不加空格）<br>div.demo{~}<br>4.分组选择器（简化代码）<br>em, strong, span{~} </p>
-</li>
+        <h3 id="Browser对象"><a href="#Browser对象" class="headerlink" title="Browser对象"></a>Browser对象</h3><p>Window 浏览器窗口<br>Navigator 浏览器信息<br>Screen 显示屏信息<br>History 只记录当前窗口访问过的URL<br>Location 包含当前 URL 信息</p>
+<h3 id="1-Window对象方法"><a href="#1-Window对象方法" class="headerlink" title="1.Window对象方法:"></a>1.Window对象方法:</h3><ul>
+<li>1.打开/关闭新窗口<br>window.open();<br>window.close();</li>
+<li>2.提示消息<br>window.alert(); – 带确认按钮的警告框。<br>window.confirm(); – 带一段消息以及确认和取消的对话框，返回布尔值。<br>window.prompt(); – 可提示用户输入的对话框，返回输入值。</li>
+<li>3.定时器：因为是window下面的对象，所以计时器的this指向window<br>window.clearInterval();<br>window.clearTimeout();<br>window.setInterval();<br>window.setTimeout();</li>
+<li>4.滚动条<br>window.scrollBy();按指定像素值来滚动内容。<br>window.scrollTo();滚动到指定坐标。<br>fixed的兼容性写法（IE不兼容fixed）<br>window.onscroll = function () {<br>  console.log(window.scrollY);<br>  oBtn.style.top = oBtn.offsetTop + window.scrollY + ‘px’<br>}<h3 id="window对象属性"><a href="#window对象属性" class="headerlink" title="window对象属性"></a>window对象属性</h3>window.closed;返回窗口是否被关闭<br>window.length;返回窗口中框架数量<br>window.name;返回窗口名称，同一个窗口共享一个name，可以实现跨域<br>window.self<br>window.top;顶层窗口</li>
 </ul>
-<h3 id="2-css权重（256进制）"><a href="#2-css权重（256进制）" class="headerlink" title="2.css权重（256进制）"></a>2.css权重（256进制）</h3><p>！important                Infinity（无限）<br>行间样式                    1000<br>id                        100<br>class / 属性选择器 / 伪类        10<br>标签 / 伪元素                1<br>通配符                    0<br>！important &gt; 行间样式 身上 &gt; id &gt; class / 属性选择器 &gt; div &gt; *<br>（优先级相同，后面会覆盖前面）</p>
-<h3 id="3-长度单位"><a href="#3-长度单位" class="headerlink" title="3.长度单位"></a>3.长度单位</h3><p>有两种类型的长度单位：相对和绝对。如果数字是0则可以省略单位。</p>
-<ul>
-<li>1.绝对长度：<br>是一个固定的值，它反映一个真实的物理尺寸，不依赖于环境（显示器、分辨率、操作系统等）<br>cm、mm、px、pt、pc</li>
-<li>2.相对长度：<br>指定了一个长度相对于另一个长度的属性，对于不同设备相对长度更适用。<br>em、rem、ex、ch、vm、vh<br>em：一般浏览器默认字体大小是16px，1em=16px。如果你在body上设置一个字体大小，那么在body内任何子元素的em值都等于这个字体大小。<br>rem：相对于根元素(html)的font-size属性计算值<br>ex：取当前作用效果字体的小写x高度，无法确定就取em的一半作为ex<br>ch：节点字体所使用的0的宽度，无法确定0的宽度就取em的一半作为ex<br>vm：视窗宽度，1vm=视窗宽度的1%<br>vh：视窗高度，1vh=视窗高度的1%</li>
-</ul>
-<h3 id="4-字体颜色设置（16进制）"><a href="#4-字体颜色设置（16进制）" class="headerlink" title="4.字体颜色设置（16进制）"></a>4.字体颜色设置（16进制）</h3><ul>
-<li>1.纯英文单词<br>red，green，blue</li>
-<li>2.颜色代码<br>r        g        b<br>00~ff    00~ff    00~ff  颜色的饱和程度<br>  #000000（#000可简写）黑<br>  (# f f f) 白</li>
-<li>3.颜色函数<br>rgb(  ,  ,  )数字0~255<br>rgb(0,0,0)黑色<br>rgb(255,255,255)白色</li>
-</ul>
-<h3 id="5-display"><a href="#5-display" class="headerlink" title="5.display"></a>5.display</h3><ul>
-<li>1.块级元素（block）：div，p，ul li，ol li，form，address<br>feature：总是在新行开始，占据一整行<br>宽度始终与浏览器宽度一样与内容无关<br>可以通过css改变宽高</li>
-<li>2.行级元素（inline）：span，strong，em，a，del<br>feature：与其他元素在一行上<br>内容决定宽度<br>不可以通过css改变宽高</li>
-<li>3.行级块元素（inline-block）：img，<br>feature：内容决定大小<br>可以改变宽高<br>常见的行级元素和块级元素<br>行级元素:span a em strong del<br>块级元素:div p address ulli olli form</li>
-</ul>
-<h3 id="6-定位"><a href="#6-定位" class="headerlink" title="6.定位"></a>6.定位</h3><ul>
-<li>1.relative相对定位：<br>1）保留原来的位置进行定位<br>2）相对于自己原来的位置进行定位<br>3）移动后，会导致它覆盖其他框</li>
-<li>2.absolute绝对定位：<br>1）脱离原来位置进行定位<br>2）相对于最近的有定位的祖先元素进行定位，没有则相对于文档进行定位<br>3）可以通过设置z-index控制堆放次序</li>
-<li>3.fixed固定定位：<br>固定定位（广告定位）<br>一般：一般用relative做参照物，absolute进行定位，以减小对后续元素的破坏（absolute会对后面元素有影响）relative当做支架，absolute当做定位技术。<br>position属性的合法值有：static、fixed、relative、absolute。static时position属性的默认值。</li>
-</ul>
-<h3 id="7-float"><a href="#7-float" class="headerlink" title="7.float"></a>7.float</h3><ul>
-<li><p>1.一开始解决报纸排版问题。文字环绕图片（报纸布局）文字用p标签包住，图片设置浮动，产生浮动流。<br>当一个元素浮动了之后，那么<br>1.浮动元素才能看到浮动元素<br>2.文本类元素（有inline / inline-block 属性的元素或者文本）<br>3.bfc元素<br>其他元素都看不到他（即可以到他的位置上）</p>
-</li>
-<li><p>2.清除浮动流<br>子元素都浮动之后，父元素包不住子元素，清除浮动流用 clear：left/right/both/none，只在块元素block上生效。变成块级display:block伪元素的属性clear才好使，外面的wrapper才可以清除标签内的浮动流。<br>.father::after{<br>content:””;<br>display:block;<br>clear: both;<br>}</p>
-</li>
-</ul>
-<h3 id="8-关于margin的两个bug（水平方向无bug，两个bug都是垂直方向）"><a href="#8-关于margin的两个bug（水平方向无bug，两个bug都是垂直方向）" class="headerlink" title="8.关于margin的两个bug（水平方向无bug，两个bug都是垂直方向）"></a>8.关于margin的两个bug（水平方向无bug，两个bug都是垂直方向）</h3><ul>
-<li>1.margin塌陷 （一个元素套着另一个元素，都设置了垂直方向的margin，那么就以大的为准）<br>方法一：在父元素身上加个顶border-top(土法子)<br>方法二：bfc     块级 格式化 上下文 block format contexting每个盒子都是一个独立的渲染单元，渲染规则是一样的，设置bfc语法可以改变盒子的渲染规则(解决父子级margin垂直方向的bug的四个语法)让父级元素触发bfc：float:left/right;浮动元素<br>position:absolute;绝对定位元素<br>overflow:hidden;<br>  display:inline-block;</li>
-<li>2.margin合并问题（左右不共用，上下共用）<br>触发概率大（纵向）（不用bfc，多一个功能鸡肋，直接设置上下，可能会触发其他的问题</li>
-</ul>
-<h3 id="9-bfc语法"><a href="#9-bfc语法" class="headerlink" title="9.bfc语法"></a>9.bfc语法</h3><p>设置bfc语法可以改变盒子的渲染规则，如果一个元素符合了成为BFC的条件，该元素内部元素的布局和定位就和外部元素互不影响(除非内部的盒子建立了新的 BFC)，是一个隔离了的独立容器</p>
-<ul>
-<li>1.形成 BFC 的条件<br>1、浮动元素，float：left/right；<br>2、绝对定位元素，position：absolute；<br>3、display：block；<br>4、overflow：hidden </li>
-<li>2.BFC常见作用<br>1、包含浮动元素，用bfc来清除浮动流<br>问题案例：高度塌陷问题：在通常情况下父元素的高度会被子元素撑开，而在这里因为其子元素为浮动元素所以父元素发生了高度坍塌，上下边界重合。这时就可以用bfc来清除浮动了。<br>2、不被浮动元素覆盖 ，触发bfc来解决遮挡问题。<br>问题案例： div浮动兄弟遮盖问题：由于左侧块级元素发生了浮动，所以和右侧未发生浮动的块级元素不在同一层内，所以会发生div遮挡问题。可以给被覆盖的右侧块加 overflow: hidden，触发bfc来解决遮挡问题。 右侧块排列在左侧快右面。<br>3、 BFC 会阻止外边距折叠 ，解决margin的塌陷现象<br>问题案例：margin塌陷问题：在标准文档流中，块级标签之间竖直方向的margin会以大的为准，这就是margin的塌陷现象。可以用overflow：hidden产生bfc来解决。 </li>
-</ul>
-<h3 id="10-伪元素（IE8开始有）：天生存在于任何一个标签内"><a href="#10-伪元素（IE8开始有）：天生存在于任何一个标签内" class="headerlink" title="10.伪元素（IE8开始有）：天生存在于任何一个标签内"></a>10.伪元素（IE8开始有）：天生存在于任何一个标签内</h3><ul>
-<li>1.before任何一个逻辑之前，after任何一个逻辑之后，在content内加内容就可以从标签内看到。<br>(before)<br>handsome<br>(after)<br>span::before/after{content:” “}  写伪元素必须写content</li>
-<li>2.伪元素天生的display是inline</li>
-</ul>
-<h3 id="11-规定"><a href="#11-规定" class="headerlink" title="11.规定"></a>11.规定</h3><ul>
-<li>1.标签规定<br>a标签不能再嵌套a标签<br>行级元素能套行级元素<br>块级元素能套行级元素和块级元素<br>行及元素不能套块级元素，但是div里嵌套p是不可以的（例外）</li>
-<li>2.文字溢出打点<br>text-overflow：ellipsis;    文本溢出要展示的样式（ellipse椭圆，椭圆的复数们就是…）<br>white-space: nowrap;    文本的排列形式，nowrap是永远不换行<br>多行文字溢出打点，只能手写<br>（多行打点的兼容性不好，移动端好使（css3），但是pc端（电脑端）兼容性不好）</li>
-<li>3.注意<br>伪元素天生的display是inline<br>clear只在块元素block上生效<br>position：absolute；和float：left/right；都会把元素隐式的变成block</li>
-<li>4.font-size:20px;    设置的是字体的高</li>
-<li>5.编写CSS让一个已知宽高的div，在PC/手机端水平垂直居中。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">position: relative;</span><br><span class="line">   margin: 0 auto;</span><br><span class="line"></span><br><span class="line">position: relative;</span><br><span class="line">   top: 50%;</span><br><span class="line">   left: 50%;</span><br><span class="line">   margin-top: -50px;</span><br><span class="line">   margin-left: -50px;</span><br><span class="line"></span><br><span class="line">position: relative;</span><br><span class="line">   top: 50%;</span><br><span class="line">   left: 50%;</span><br><span class="line">   transform: translate(-50%, -50%)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="用css画出一个三角形"><a href="#用css画出一个三角形" class="headerlink" title="用css画出一个三角形"></a>用css画出一个三角形</h3><p>利用border（border-style：solid / dotted条状虚线）</p>
+<h3 id="2-Navigator属性："><a href="#2-Navigator属性：" class="headerlink" title="2.Navigator属性："></a>2.Navigator属性：</h3><p>navigator.userAgent; 返回浏览器代码名，版本，平台信息<br>navigator.cookieEnabled;检验浏览器中是否启用cookie<br>navigator.onLine;是否联网，离线缓存</p>
+<h3 id="3-history对象和方法"><a href="#3-history对象和方法" class="headerlink" title="3.history对象和方法"></a>3.history对象和方法</h3><p>history.length; 历史列表长度<br>history.back(); 回退<br>history.forward(); 前进<br>history.go(n); 直接翻</p>
+<h3 id="4-Location"><a href="#4-Location" class="headerlink" title="4.Location"></a>4.Location</h3><p>location.hash; 返回从#以后的值（锚点/哈希值）<br>哈希值作用：哈希值改变不刷新页面，还能被记录到历史操作中，可以进行回退的操作。<br>location.host; 返回主机名和端口号(默认端口 http:8000，https:443)<br>location.hostName; 返回主机名<br>location.href; 返回完整的url<br>location.pathname; 返回文件所在路径<br>location.port; 返回端口号<br>location.protocol; 返回协议<br>location.search; 返回？后面的参数<br>location.assign(url); 加载一个新文档<br>location.reload(); 重新加载；<br>location.replace(); 用新文档替换当前文档<br>iframe内联框架，可以实现跨域<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=&quot;https://www.baidu.com&quot; width=&quot;500&quot;; height=&quot;500&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure></p>
 
       
 
@@ -255,7 +210,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DOM</a>
         		</li>
       		
 		</ul>
@@ -311,7 +266,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/30/CSS/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/31/BOM/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -325,18 +280,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/07/30/TCP-IP/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/07/31/jQuery/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          TCP/IP
+          jQuery
         
       </div>
     </a>
   
   
-    <a href="/2018/07/30/HTML/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">HTML</div>
+    <a href="/2018/07/31/Doctype/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Doctype</div>
       <i class="icon-circle-right"></i>
     </a>
   
